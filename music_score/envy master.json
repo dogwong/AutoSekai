@@ -1,0 +1,6371 @@
+{
+    "BEATs": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+    ],
+    "BPMs": [
+        132,
+        132,
+        132,
+        132,
+        132,
+        132,
+        132,
+        132,
+        132,
+        132,
+        132,
+        132,
+        132,
+        132,
+        132,
+        132,
+        132,
+        132,
+        132,
+        132,
+        132,
+        132,
+        132,
+        132,
+        132,
+        132,
+        132,
+        132,
+        132,
+        132,
+        132,
+        132,
+        132,
+        132,
+        132,
+        132,
+        132,
+        132,
+        132,
+        132,
+        132
+    ],
+    "airActionNotes": [],
+    "airNotes": [
+        {
+            "lane": 8,
+            "laneType": 5,
+            "measure": 0,
+            "noteType": 1,
+            "tick": 576,
+            "width": 4
+        },
+        {
+            "lane": 4,
+            "laneType": 5,
+            "measure": 1,
+            "noteType": 1,
+            "tick": 576,
+            "width": 4
+        },
+        {
+            "lane": 5,
+            "laneType": 5,
+            "measure": 7,
+            "noteType": 5,
+            "tick": 0,
+            "width": 3
+        },
+        {
+            "lane": 5,
+            "laneType": 5,
+            "measure": 7,
+            "noteType": 2,
+            "tick": 96,
+            "width": 3
+        },
+        {
+            "lane": 5,
+            "laneType": 5,
+            "measure": 7,
+            "noteType": 5,
+            "tick": 384,
+            "width": 3
+        },
+        {
+            "lane": 5,
+            "laneType": 5,
+            "measure": 7,
+            "noteType": 5,
+            "tick": 576,
+            "width": 3
+        },
+        {
+            "lane": 8,
+            "laneType": 5,
+            "measure": 7,
+            "noteType": 5,
+            "tick": 0,
+            "width": 3
+        },
+        {
+            "lane": 8,
+            "laneType": 5,
+            "measure": 7,
+            "noteType": 5,
+            "tick": 384,
+            "width": 3
+        },
+        {
+            "lane": 8,
+            "laneType": 5,
+            "measure": 7,
+            "noteType": 2,
+            "tick": 480,
+            "width": 3
+        },
+        {
+            "lane": 8,
+            "laneType": 5,
+            "measure": 7,
+            "noteType": 5,
+            "tick": 576,
+            "width": 3
+        },
+        {
+            "lane": 2,
+            "laneType": 5,
+            "measure": 7,
+            "noteType": 2,
+            "tick": 96,
+            "width": 3
+        },
+        {
+            "lane": 2,
+            "laneType": 5,
+            "measure": 7,
+            "noteType": 2,
+            "tick": 672,
+            "width": 3
+        },
+        {
+            "lane": 11,
+            "laneType": 5,
+            "measure": 7,
+            "noteType": 2,
+            "tick": 480,
+            "width": 3
+        },
+        {
+            "lane": 11,
+            "laneType": 5,
+            "measure": 7,
+            "noteType": 2,
+            "tick": 672,
+            "width": 3
+        },
+        {
+            "lane": 8,
+            "laneType": 5,
+            "measure": 12,
+            "noteType": 6,
+            "tick": 672,
+            "width": 3
+        },
+        {
+            "lane": 11,
+            "laneType": 5,
+            "measure": 13,
+            "noteType": 2,
+            "tick": 0,
+            "width": 3
+        },
+        {
+            "lane": 10,
+            "laneType": 5,
+            "measure": 13,
+            "noteType": 5,
+            "tick": 576,
+            "width": 4
+        },
+        {
+            "lane": 2,
+            "laneType": 5,
+            "measure": 13,
+            "noteType": 5,
+            "tick": 576,
+            "width": 2
+        },
+        {
+            "lane": 6,
+            "laneType": 5,
+            "measure": 27,
+            "noteType": 2,
+            "tick": 0,
+            "width": 2
+        },
+        {
+            "lane": 6,
+            "laneType": 5,
+            "measure": 27,
+            "noteType": 2,
+            "tick": 192,
+            "width": 2
+        },
+        {
+            "lane": 8,
+            "laneType": 5,
+            "measure": 27,
+            "noteType": 2,
+            "tick": 0,
+            "width": 2
+        },
+        {
+            "lane": 8,
+            "laneType": 5,
+            "measure": 27,
+            "noteType": 2,
+            "tick": 192,
+            "width": 2
+        },
+        {
+            "lane": 8,
+            "laneType": 5,
+            "measure": 27,
+            "noteType": 4,
+            "tick": 384,
+            "width": 6
+        },
+        {
+            "lane": 2,
+            "laneType": 5,
+            "measure": 27,
+            "noteType": 3,
+            "tick": 384,
+            "width": 6
+        },
+        {
+            "lane": 2,
+            "laneType": 5,
+            "measure": 6,
+            "noteType": 3,
+            "tick": 0,
+            "width": 3
+        },
+        {
+            "lane": 12,
+            "laneType": 5,
+            "measure": 6,
+            "noteType": 4,
+            "tick": 0,
+            "width": 2
+        },
+        {
+            "lane": 2,
+            "laneType": 5,
+            "measure": 37,
+            "noteType": 3,
+            "tick": 0,
+            "width": 4
+        },
+        {
+            "lane": 10,
+            "laneType": 5,
+            "measure": 37,
+            "noteType": 4,
+            "tick": 0,
+            "width": 4
+        },
+        {
+            "lane": 8,
+            "laneType": 5,
+            "measure": 39,
+            "noteType": 4,
+            "tick": 0,
+            "width": 6
+        },
+        {
+            "lane": 2,
+            "laneType": 5,
+            "measure": 39,
+            "noteType": 3,
+            "tick": 0,
+            "width": 6
+        },
+        {
+            "lane": 10,
+            "laneType": 5,
+            "measure": 4,
+            "noteType": 1,
+            "tick": 0,
+            "width": 4
+        },
+        {
+            "lane": 2,
+            "laneType": 5,
+            "measure": 4,
+            "noteType": 1,
+            "tick": 0,
+            "width": 4
+        },
+        {
+            "lane": 12,
+            "laneType": 5,
+            "measure": 5,
+            "noteType": 6,
+            "tick": 576,
+            "width": 2
+        },
+        {
+            "lane": 8,
+            "laneType": 5,
+            "measure": 5,
+            "noteType": 2,
+            "tick": 672,
+            "width": 2
+        },
+        {
+            "lane": 5,
+            "laneType": 5,
+            "measure": 5,
+            "noteType": 2,
+            "tick": 576,
+            "width": 3
+        },
+        {
+            "lane": 2,
+            "laneType": 5,
+            "measure": 9,
+            "noteType": 5,
+            "tick": 576,
+            "width": 2
+        },
+        {
+            "lane": 6,
+            "laneType": 5,
+            "measure": 9,
+            "noteType": 2,
+            "tick": 672,
+            "width": 2
+        },
+        {
+            "lane": 8,
+            "laneType": 5,
+            "measure": 9,
+            "noteType": 2,
+            "tick": 576,
+            "width": 3
+        },
+        {
+            "lane": 11,
+            "laneType": 5,
+            "measure": 10,
+            "noteType": 4,
+            "tick": 0,
+            "width": 3
+        },
+        {
+            "lane": 2,
+            "laneType": 5,
+            "measure": 10,
+            "noteType": 3,
+            "tick": 0,
+            "width": 2
+        },
+        {
+            "lane": 8,
+            "laneType": 5,
+            "measure": 11,
+            "noteType": 6,
+            "tick": 0,
+            "width": 3
+        },
+        {
+            "lane": 8,
+            "laneType": 5,
+            "measure": 11,
+            "noteType": 2,
+            "tick": 96,
+            "width": 3
+        },
+        {
+            "lane": 8,
+            "laneType": 5,
+            "measure": 11,
+            "noteType": 6,
+            "tick": 384,
+            "width": 3
+        },
+        {
+            "lane": 8,
+            "laneType": 5,
+            "measure": 11,
+            "noteType": 6,
+            "tick": 576,
+            "width": 3
+        },
+        {
+            "lane": 5,
+            "laneType": 5,
+            "measure": 11,
+            "noteType": 6,
+            "tick": 0,
+            "width": 3
+        },
+        {
+            "lane": 5,
+            "laneType": 5,
+            "measure": 11,
+            "noteType": 6,
+            "tick": 384,
+            "width": 3
+        },
+        {
+            "lane": 5,
+            "laneType": 5,
+            "measure": 11,
+            "noteType": 2,
+            "tick": 480,
+            "width": 3
+        },
+        {
+            "lane": 5,
+            "laneType": 5,
+            "measure": 11,
+            "noteType": 6,
+            "tick": 576,
+            "width": 3
+        },
+        {
+            "lane": 11,
+            "laneType": 5,
+            "measure": 11,
+            "noteType": 2,
+            "tick": 96,
+            "width": 3
+        },
+        {
+            "lane": 11,
+            "laneType": 5,
+            "measure": 11,
+            "noteType": 2,
+            "tick": 672,
+            "width": 3
+        },
+        {
+            "lane": 2,
+            "laneType": 5,
+            "measure": 11,
+            "noteType": 2,
+            "tick": 480,
+            "width": 3
+        },
+        {
+            "lane": 2,
+            "laneType": 5,
+            "measure": 11,
+            "noteType": 2,
+            "tick": 672,
+            "width": 3
+        },
+        {
+            "lane": 8,
+            "laneType": 5,
+            "measure": 14,
+            "noteType": 1,
+            "tick": 0,
+            "width": 4
+        },
+        {
+            "lane": 6,
+            "laneType": 5,
+            "measure": 14,
+            "noteType": 1,
+            "tick": 0,
+            "width": 2
+        },
+        {
+            "lane": 5,
+            "laneType": 5,
+            "measure": 14,
+            "noteType": 5,
+            "tick": 672,
+            "width": 3
+        },
+        {
+            "lane": 5,
+            "laneType": 5,
+            "measure": 16,
+            "noteType": 5,
+            "tick": 672,
+            "width": 3
+        },
+        {
+            "lane": 4,
+            "laneType": 5,
+            "measure": 16,
+            "noteType": 1,
+            "tick": 0,
+            "width": 4
+        },
+        {
+            "lane": 8,
+            "laneType": 5,
+            "measure": 16,
+            "noteType": 1,
+            "tick": 0,
+            "width": 2
+        },
+        {
+            "lane": 2,
+            "laneType": 5,
+            "measure": 17,
+            "noteType": 2,
+            "tick": 0,
+            "width": 3
+        },
+        {
+            "lane": 2,
+            "laneType": 5,
+            "measure": 17,
+            "noteType": 1,
+            "tick": 384,
+            "width": 2
+        },
+        {
+            "lane": 6,
+            "laneType": 5,
+            "measure": 17,
+            "noteType": 1,
+            "tick": 384,
+            "width": 4
+        },
+        {
+            "lane": 7,
+            "laneType": 5,
+            "measure": 20,
+            "noteType": 5,
+            "tick": 672,
+            "width": 3
+        },
+        {
+            "lane": 2,
+            "laneType": 5,
+            "measure": 21,
+            "noteType": 6,
+            "tick": 576,
+            "width": 4
+        },
+        {
+            "lane": 12,
+            "laneType": 5,
+            "measure": 21,
+            "noteType": 6,
+            "tick": 576,
+            "width": 2
+        },
+        {
+            "lane": 4,
+            "laneType": 5,
+            "measure": 22,
+            "noteType": 1,
+            "tick": 0,
+            "width": 4
+        },
+        {
+            "lane": 8,
+            "laneType": 5,
+            "measure": 22,
+            "noteType": 1,
+            "tick": 0,
+            "width": 2
+        },
+        {
+            "lane": 6,
+            "laneType": 5,
+            "measure": 22,
+            "noteType": 6,
+            "tick": 672,
+            "width": 3
+        },
+        {
+            "lane": 11,
+            "laneType": 5,
+            "measure": 22,
+            "noteType": 4,
+            "tick": 480,
+            "width": 3
+        },
+        {
+            "lane": 2,
+            "laneType": 5,
+            "measure": 29,
+            "noteType": 3,
+            "tick": 480,
+            "width": 4
+        },
+        {
+            "lane": 2,
+            "laneType": 5,
+            "measure": 29,
+            "noteType": 3,
+            "tick": 576,
+            "width": 4
+        },
+        {
+            "lane": 2,
+            "laneType": 5,
+            "measure": 31,
+            "noteType": 3,
+            "tick": 480,
+            "width": 4
+        },
+        {
+            "lane": 2,
+            "laneType": 5,
+            "measure": 31,
+            "noteType": 3,
+            "tick": 576,
+            "width": 4
+        },
+        {
+            "lane": 10,
+            "laneType": 5,
+            "measure": 31,
+            "noteType": 5,
+            "tick": 384,
+            "width": 4
+        },
+        {
+            "lane": 8,
+            "laneType": 5,
+            "measure": 38,
+            "noteType": 2,
+            "tick": 576,
+            "width": 2
+        },
+        {
+            "lane": 6,
+            "laneType": 5,
+            "measure": 38,
+            "noteType": 2,
+            "tick": 576,
+            "width": 2
+        },
+        {
+            "lane": 5,
+            "laneType": 5,
+            "measure": 28,
+            "noteType": 3,
+            "tick": 192,
+            "width": 3
+        },
+        {
+            "lane": 4,
+            "laneType": 5,
+            "measure": 28,
+            "noteType": 1,
+            "tick": 0,
+            "width": 8
+        },
+        {
+            "lane": 8,
+            "laneType": 5,
+            "measure": 28,
+            "noteType": 4,
+            "tick": 480,
+            "width": 3
+        },
+        {
+            "lane": 8,
+            "laneType": 5,
+            "measure": 34,
+            "noteType": 6,
+            "tick": 0,
+            "width": 6
+        },
+        {
+            "lane": 8,
+            "laneType": 5,
+            "measure": 34,
+            "noteType": 6,
+            "tick": 192,
+            "width": 6
+        },
+        {
+            "lane": 8,
+            "laneType": 5,
+            "measure": 34,
+            "noteType": 2,
+            "tick": 288,
+            "width": 2
+        },
+        {
+            "lane": 8,
+            "laneType": 5,
+            "measure": 34,
+            "noteType": 6,
+            "tick": 384,
+            "width": 6
+        },
+        {
+            "lane": 12,
+            "laneType": 5,
+            "measure": 34,
+            "noteType": 2,
+            "tick": 96,
+            "width": 2
+        },
+        {
+            "lane": 12,
+            "laneType": 5,
+            "measure": 34,
+            "noteType": 2,
+            "tick": 480,
+            "width": 2
+        },
+        {
+            "lane": 2,
+            "laneType": 5,
+            "measure": 34,
+            "noteType": 5,
+            "tick": 0,
+            "width": 6
+        },
+        {
+            "lane": 2,
+            "laneType": 5,
+            "measure": 34,
+            "noteType": 2,
+            "tick": 96,
+            "width": 2
+        },
+        {
+            "lane": 2,
+            "laneType": 5,
+            "measure": 34,
+            "noteType": 5,
+            "tick": 192,
+            "width": 6
+        },
+        {
+            "lane": 2,
+            "laneType": 5,
+            "measure": 34,
+            "noteType": 5,
+            "tick": 384,
+            "width": 6
+        },
+        {
+            "lane": 2,
+            "laneType": 5,
+            "measure": 34,
+            "noteType": 2,
+            "tick": 480,
+            "width": 2
+        },
+        {
+            "lane": 6,
+            "laneType": 5,
+            "measure": 34,
+            "noteType": 2,
+            "tick": 288,
+            "width": 2
+        },
+        {
+            "lane": 11,
+            "laneType": 5,
+            "measure": 36,
+            "noteType": 1,
+            "tick": 96,
+            "width": 3
+        },
+        {
+            "lane": 11,
+            "laneType": 5,
+            "measure": 36,
+            "noteType": 1,
+            "tick": 192,
+            "width": 3
+        },
+        {
+            "lane": 2,
+            "laneType": 5,
+            "measure": 36,
+            "noteType": 1,
+            "tick": 384,
+            "width": 3
+        },
+        {
+            "lane": 8,
+            "laneType": 5,
+            "measure": 26,
+            "noteType": 5,
+            "tick": 672,
+            "width": 6
+        },
+        {
+            "lane": 2,
+            "laneType": 5,
+            "measure": 26,
+            "noteType": 5,
+            "tick": 672,
+            "width": 6
+        },
+        {
+            "lane": 8,
+            "laneType": 5,
+            "measure": 30,
+            "noteType": 4,
+            "tick": 192,
+            "width": 3
+        },
+        {
+            "lane": 5,
+            "laneType": 5,
+            "measure": 30,
+            "noteType": 3,
+            "tick": 480,
+            "width": 3
+        },
+        {
+            "lane": 8,
+            "laneType": 5,
+            "measure": 32,
+            "noteType": 4,
+            "tick": 192,
+            "width": 3
+        },
+        {
+            "lane": 5,
+            "laneType": 5,
+            "measure": 32,
+            "noteType": 3,
+            "tick": 480,
+            "width": 3
+        },
+        {
+            "lane": 10,
+            "laneType": 5,
+            "measure": 33,
+            "noteType": 4,
+            "tick": 480,
+            "width": 4
+        },
+        {
+            "lane": 10,
+            "laneType": 5,
+            "measure": 33,
+            "noteType": 4,
+            "tick": 576,
+            "width": 4
+        },
+        {
+            "lane": 11,
+            "laneType": 5,
+            "measure": 18,
+            "noteType": 2,
+            "tick": 672,
+            "width": 3
+        },
+        {
+            "lane": 6,
+            "laneType": 5,
+            "measure": 18,
+            "noteType": 2,
+            "tick": 672,
+            "width": 3
+        },
+        {
+            "lane": 7,
+            "laneType": 5,
+            "measure": 19,
+            "noteType": 2,
+            "tick": 96,
+            "width": 3
+        },
+        {
+            "lane": 2,
+            "laneType": 5,
+            "measure": 19,
+            "noteType": 2,
+            "tick": 96,
+            "width": 3
+        },
+        {
+            "lane": 6,
+            "laneType": 5,
+            "measure": 19,
+            "noteType": 2,
+            "tick": 192,
+            "width": 3
+        },
+        {
+            "lane": 11,
+            "laneType": 5,
+            "measure": 19,
+            "noteType": 2,
+            "tick": 192,
+            "width": 3
+        },
+        {
+            "lane": 8,
+            "laneType": 5,
+            "measure": 23,
+            "noteType": 6,
+            "tick": 576,
+            "width": 2
+        },
+        {
+            "lane": 12,
+            "laneType": 5,
+            "measure": 23,
+            "noteType": 2,
+            "tick": 672,
+            "width": 2
+        },
+        {
+            "lane": 5,
+            "laneType": 5,
+            "measure": 23,
+            "noteType": 6,
+            "tick": 576,
+            "width": 3
+        },
+        {
+            "lane": 8,
+            "laneType": 5,
+            "measure": 24,
+            "noteType": 1,
+            "tick": 0,
+            "width": 2
+        },
+        {
+            "lane": 8,
+            "laneType": 5,
+            "measure": 24,
+            "noteType": 6,
+            "tick": 672,
+            "width": 3
+        },
+        {
+            "lane": 2,
+            "laneType": 5,
+            "measure": 24,
+            "noteType": 1,
+            "tick": 0,
+            "width": 3
+        },
+        {
+            "lane": 2,
+            "laneType": 5,
+            "measure": 15,
+            "noteType": 2,
+            "tick": 0,
+            "width": 3
+        },
+        {
+            "lane": 2,
+            "laneType": 5,
+            "measure": 15,
+            "noteType": 6,
+            "tick": 576,
+            "width": 4
+        },
+        {
+            "lane": 12,
+            "laneType": 5,
+            "measure": 15,
+            "noteType": 6,
+            "tick": 576,
+            "width": 2
+        },
+        {
+            "lane": 11,
+            "laneType": 5,
+            "measure": 25,
+            "noteType": 2,
+            "tick": 0,
+            "width": 3
+        },
+        {
+            "lane": 6,
+            "laneType": 5,
+            "measure": 25,
+            "noteType": 1,
+            "tick": 384,
+            "width": 4
+        },
+        {
+            "lane": 12,
+            "laneType": 5,
+            "measure": 25,
+            "noteType": 1,
+            "tick": 384,
+            "width": 2
+        }
+    ],
+    "holdNotes": [],
+    "measure": 41,
+    "shortNotes": [
+        {
+            "lane": 5,
+            "laneType": 1,
+            "measure": 0,
+            "noteType": 1,
+            "tick": 144,
+            "width": 3
+        },
+        {
+            "lane": 5,
+            "laneType": 1,
+            "measure": 0,
+            "noteType": 1,
+            "tick": 384,
+            "width": 2
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 0,
+            "noteType": 1,
+            "tick": 192,
+            "width": 3
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 0,
+            "noteType": 1,
+            "tick": 576,
+            "width": 4
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 0,
+            "noteType": 1,
+            "tick": 288,
+            "width": 3
+        },
+        {
+            "lane": 11,
+            "laneType": 1,
+            "measure": 0,
+            "noteType": 1,
+            "tick": 384,
+            "width": 3
+        },
+        {
+            "lane": 4,
+            "laneType": 1,
+            "measure": 0,
+            "noteType": 1,
+            "tick": 672,
+            "width": 4
+        },
+        {
+            "lane": 9,
+            "laneType": 1,
+            "measure": 0,
+            "noteType": 1,
+            "tick": 288,
+            "width": 2
+        },
+        {
+            "lane": 12,
+            "laneType": 1,
+            "measure": 0,
+            "noteType": 1,
+            "tick": 672,
+            "width": 2
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 1,
+            "noteType": 1,
+            "tick": 384,
+            "width": 3
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 1,
+            "noteType": 1,
+            "tick": 672,
+            "width": 2
+        },
+        {
+            "lane": 4,
+            "laneType": 1,
+            "measure": 1,
+            "noteType": 1,
+            "tick": 576,
+            "width": 4
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 1,
+            "noteType": 1,
+            "tick": 144,
+            "width": 3
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 1,
+            "noteType": 1,
+            "tick": 672,
+            "width": 3
+        },
+        {
+            "lane": 5,
+            "laneType": 1,
+            "measure": 1,
+            "noteType": 1,
+            "tick": 192,
+            "width": 3
+        },
+        {
+            "lane": 5,
+            "laneType": 1,
+            "measure": 1,
+            "noteType": 1,
+            "tick": 288,
+            "width": 2
+        },
+        {
+            "lane": 11,
+            "laneType": 1,
+            "measure": 1,
+            "noteType": 1,
+            "tick": 288,
+            "width": 3
+        },
+        {
+            "lane": 9,
+            "laneType": 1,
+            "measure": 1,
+            "noteType": 1,
+            "tick": 384,
+            "width": 2
+        },
+        {
+            "lane": 0,
+            "laneType": 1,
+            "measure": 1,
+            "noteType": 4,
+            "tick": 0,
+            "width": 1
+        },
+        {
+            "lane": 5,
+            "laneType": 1,
+            "measure": 2,
+            "noteType": 1,
+            "tick": 144,
+            "width": 3
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 2,
+            "noteType": 1,
+            "tick": 192,
+            "width": 3
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 2,
+            "noteType": 1,
+            "tick": 288,
+            "width": 4
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 4,
+            "noteType": 1,
+            "tick": 0,
+            "width": 4
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 4,
+            "noteType": 1,
+            "tick": 96,
+            "width": 4
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 4,
+            "noteType": 1,
+            "tick": 672,
+            "width": 2
+        },
+        {
+            "lane": 4,
+            "laneType": 1,
+            "measure": 4,
+            "noteType": 1,
+            "tick": 192,
+            "width": 4
+        },
+        {
+            "lane": 4,
+            "laneType": 1,
+            "measure": 4,
+            "noteType": 1,
+            "tick": 576,
+            "width": 2
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 4,
+            "noteType": 1,
+            "tick": 288,
+            "width": 4
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 4,
+            "noteType": 1,
+            "tick": 384,
+            "width": 4
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 4,
+            "noteType": 1,
+            "tick": 448,
+            "width": 4
+        },
+        {
+            "lane": 10,
+            "laneType": 1,
+            "measure": 4,
+            "noteType": 1,
+            "tick": 0,
+            "width": 4
+        },
+        {
+            "lane": 10,
+            "laneType": 1,
+            "measure": 4,
+            "noteType": 1,
+            "tick": 192,
+            "width": 2
+        },
+        {
+            "lane": 10,
+            "laneType": 1,
+            "measure": 4,
+            "noteType": 1,
+            "tick": 416,
+            "width": 3
+        },
+        {
+            "lane": 3,
+            "laneType": 1,
+            "measure": 4,
+            "noteType": 1,
+            "tick": 480,
+            "width": 3
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 4,
+            "noteType": 1,
+            "tick": 96,
+            "width": 2
+        },
+        {
+            "lane": 12,
+            "laneType": 1,
+            "measure": 4,
+            "noteType": 1,
+            "tick": 288,
+            "width": 2
+        },
+        {
+            "lane": 9,
+            "laneType": 1,
+            "measure": 4,
+            "noteType": 1,
+            "tick": 576,
+            "width": 3
+        },
+        {
+            "lane": 7,
+            "laneType": 1,
+            "measure": 4,
+            "noteType": 1,
+            "tick": 672,
+            "width": 3
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 5,
+            "noteType": 1,
+            "tick": 0,
+            "width": 6
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 5,
+            "noteType": 1,
+            "tick": 384,
+            "width": 4
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 5,
+            "noteType": 1,
+            "tick": 96,
+            "width": 3
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 5,
+            "noteType": 1,
+            "tick": 672,
+            "width": 2
+        },
+        {
+            "lane": 10,
+            "laneType": 1,
+            "measure": 5,
+            "noteType": 1,
+            "tick": 192,
+            "width": 3
+        },
+        {
+            "lane": 10,
+            "laneType": 1,
+            "measure": 5,
+            "noteType": 1,
+            "tick": 384,
+            "width": 4
+        },
+        {
+            "lane": 4,
+            "laneType": 1,
+            "measure": 5,
+            "noteType": 1,
+            "tick": 96,
+            "width": 2
+        },
+        {
+            "lane": 4,
+            "laneType": 1,
+            "measure": 5,
+            "noteType": 1,
+            "tick": 288,
+            "width": 6
+        },
+        {
+            "lane": 12,
+            "laneType": 1,
+            "measure": 5,
+            "noteType": 1,
+            "tick": 0,
+            "width": 2
+        },
+        {
+            "lane": 12,
+            "laneType": 1,
+            "measure": 5,
+            "noteType": 1,
+            "tick": 288,
+            "width": 2
+        },
+        {
+            "lane": 12,
+            "laneType": 1,
+            "measure": 5,
+            "noteType": 1,
+            "tick": 576,
+            "width": 2
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 5,
+            "noteType": 1,
+            "tick": 192,
+            "width": 2
+        },
+        {
+            "lane": 5,
+            "laneType": 1,
+            "measure": 5,
+            "noteType": 1,
+            "tick": 576,
+            "width": 3
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 6,
+            "noteType": 1,
+            "tick": 144,
+            "width": 2
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 6,
+            "noteType": 1,
+            "tick": 672,
+            "width": 3
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 6,
+            "noteType": 1,
+            "tick": 96,
+            "width": 2
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 6,
+            "noteType": 1,
+            "tick": 192,
+            "width": 2
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 6,
+            "noteType": 1,
+            "tick": 384,
+            "width": 6
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 6,
+            "noteType": 1,
+            "tick": 288,
+            "width": 6
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 6,
+            "noteType": 1,
+            "tick": 384,
+            "width": 2
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 6,
+            "noteType": 1,
+            "tick": 576,
+            "width": 3
+        },
+        {
+            "lane": 7,
+            "laneType": 1,
+            "measure": 6,
+            "noteType": 1,
+            "tick": 576,
+            "width": 3
+        },
+        {
+            "lane": 11,
+            "laneType": 1,
+            "measure": 6,
+            "noteType": 1,
+            "tick": 672,
+            "width": 3
+        },
+        {
+            "lane": 10,
+            "laneType": 1,
+            "measure": 6,
+            "noteType": 1,
+            "tick": 288,
+            "width": 2
+        },
+        {
+            "lane": 0,
+            "laneType": 1,
+            "measure": 6,
+            "noteType": 4,
+            "tick": 0,
+            "width": 1
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 7,
+            "noteType": 1,
+            "tick": 96,
+            "width": 3
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 7,
+            "noteType": 1,
+            "tick": 288,
+            "width": 3
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 7,
+            "noteType": 1,
+            "tick": 672,
+            "width": 3
+        },
+        {
+            "lane": 11,
+            "laneType": 1,
+            "measure": 7,
+            "noteType": 1,
+            "tick": 288,
+            "width": 3
+        },
+        {
+            "lane": 11,
+            "laneType": 1,
+            "measure": 7,
+            "noteType": 1,
+            "tick": 480,
+            "width": 3
+        },
+        {
+            "lane": 11,
+            "laneType": 1,
+            "measure": 7,
+            "noteType": 1,
+            "tick": 672,
+            "width": 3
+        },
+        {
+            "lane": 5,
+            "laneType": 1,
+            "measure": 7,
+            "noteType": 1,
+            "tick": 0,
+            "width": 3
+        },
+        {
+            "lane": 5,
+            "laneType": 1,
+            "measure": 7,
+            "noteType": 1,
+            "tick": 96,
+            "width": 3
+        },
+        {
+            "lane": 5,
+            "laneType": 1,
+            "measure": 7,
+            "noteType": 1,
+            "tick": 384,
+            "width": 3
+        },
+        {
+            "lane": 5,
+            "laneType": 1,
+            "measure": 7,
+            "noteType": 1,
+            "tick": 576,
+            "width": 3
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 7,
+            "noteType": 1,
+            "tick": 0,
+            "width": 3
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 7,
+            "noteType": 1,
+            "tick": 384,
+            "width": 3
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 7,
+            "noteType": 1,
+            "tick": 480,
+            "width": 3
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 7,
+            "noteType": 1,
+            "tick": 576,
+            "width": 3
+        },
+        {
+            "lane": 11,
+            "laneType": 1,
+            "measure": 12,
+            "noteType": 1,
+            "tick": 96,
+            "width": 3
+        },
+        {
+            "lane": 11,
+            "laneType": 1,
+            "measure": 12,
+            "noteType": 1,
+            "tick": 288,
+            "width": 3
+        },
+        {
+            "lane": 11,
+            "laneType": 1,
+            "measure": 12,
+            "noteType": 1,
+            "tick": 576,
+            "width": 3
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 12,
+            "noteType": 1,
+            "tick": 192,
+            "width": 3
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 12,
+            "noteType": 1,
+            "tick": 384,
+            "width": 6
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 12,
+            "noteType": 1,
+            "tick": 672,
+            "width": 3
+        },
+        {
+            "lane": 4,
+            "laneType": 1,
+            "measure": 12,
+            "noteType": 1,
+            "tick": 192,
+            "width": 2
+        },
+        {
+            "lane": 4,
+            "laneType": 1,
+            "measure": 12,
+            "noteType": 1,
+            "tick": 384,
+            "width": 2
+        },
+        {
+            "lane": 4,
+            "laneType": 1,
+            "measure": 12,
+            "noteType": 1,
+            "tick": 480,
+            "width": 6
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 12,
+            "noteType": 1,
+            "tick": 288,
+            "width": 2
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 12,
+            "noteType": 1,
+            "tick": 672,
+            "width": 4
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 12,
+            "noteType": 1,
+            "tick": 144,
+            "width": 2
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 12,
+            "noteType": 1,
+            "tick": 576,
+            "width": 2
+        },
+        {
+            "lane": 4,
+            "laneType": 1,
+            "measure": 13,
+            "noteType": 1,
+            "tick": 0,
+            "width": 2
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 13,
+            "noteType": 1,
+            "tick": 96,
+            "width": 2
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 13,
+            "noteType": 1,
+            "tick": 192,
+            "width": 4
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 13,
+            "noteType": 1,
+            "tick": 576,
+            "width": 2
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 13,
+            "noteType": 1,
+            "tick": 288,
+            "width": 4
+        },
+        {
+            "lane": 11,
+            "laneType": 1,
+            "measure": 13,
+            "noteType": 1,
+            "tick": 0,
+            "width": 3
+        },
+        {
+            "lane": 12,
+            "laneType": 1,
+            "measure": 13,
+            "noteType": 1,
+            "tick": 192,
+            "width": 2
+        },
+        {
+            "lane": 12,
+            "laneType": 1,
+            "measure": 13,
+            "noteType": 1,
+            "tick": 288,
+            "width": 2
+        },
+        {
+            "lane": 10,
+            "laneType": 1,
+            "measure": 13,
+            "noteType": 1,
+            "tick": 576,
+            "width": 4
+        },
+        {
+            "lane": 4,
+            "laneType": 1,
+            "measure": 17,
+            "noteType": 1,
+            "tick": 288,
+            "width": 2
+        },
+        {
+            "lane": 4,
+            "laneType": 1,
+            "measure": 17,
+            "noteType": 1,
+            "tick": 576,
+            "width": 4
+        },
+        {
+            "lane": 10,
+            "laneType": 1,
+            "measure": 17,
+            "noteType": 1,
+            "tick": 192,
+            "width": 4
+        },
+        {
+            "lane": 10,
+            "laneType": 1,
+            "measure": 17,
+            "noteType": 1,
+            "tick": 576,
+            "width": 2
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 17,
+            "noteType": 1,
+            "tick": 288,
+            "width": 4
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 17,
+            "noteType": 1,
+            "tick": 672,
+            "width": 2
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 17,
+            "noteType": 1,
+            "tick": 0,
+            "width": 3
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 17,
+            "noteType": 1,
+            "tick": 384,
+            "width": 2
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 17,
+            "noteType": 1,
+            "tick": 192,
+            "width": 2
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 17,
+            "noteType": 1,
+            "tick": 384,
+            "width": 4
+        },
+        {
+            "lane": 9,
+            "laneType": 1,
+            "measure": 17,
+            "noteType": 1,
+            "tick": 0,
+            "width": 2
+        },
+        {
+            "lane": 9,
+            "laneType": 1,
+            "measure": 17,
+            "noteType": 1,
+            "tick": 96,
+            "width": 2
+        },
+        {
+            "lane": 0,
+            "laneType": 1,
+            "measure": 17,
+            "noteType": 4,
+            "tick": 0,
+            "width": 1
+        },
+        {
+            "lane": 10,
+            "laneType": 1,
+            "measure": 19,
+            "noteType": 1,
+            "tick": 480,
+            "width": 3
+        },
+        {
+            "lane": 10,
+            "laneType": 1,
+            "measure": 19,
+            "noteType": 1,
+            "tick": 576,
+            "width": 2
+        },
+        {
+            "lane": 7,
+            "laneType": 1,
+            "measure": 19,
+            "noteType": 1,
+            "tick": 96,
+            "width": 3
+        },
+        {
+            "lane": 7,
+            "laneType": 1,
+            "measure": 19,
+            "noteType": 1,
+            "tick": 624,
+            "width": 2
+        },
+        {
+            "lane": 4,
+            "laneType": 1,
+            "measure": 19,
+            "noteType": 1,
+            "tick": 672,
+            "width": 2
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 19,
+            "noteType": 1,
+            "tick": 96,
+            "width": 3
+        },
+        {
+            "lane": 11,
+            "laneType": 1,
+            "measure": 19,
+            "noteType": 1,
+            "tick": 192,
+            "width": 3
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 19,
+            "noteType": 1,
+            "tick": 192,
+            "width": 3
+        },
+        {
+            "lane": 3,
+            "laneType": 1,
+            "measure": 19,
+            "noteType": 1,
+            "tick": 528,
+            "width": 3
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 18,
+            "noteType": 1,
+            "tick": 576,
+            "width": 2
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 18,
+            "noteType": 1,
+            "tick": 672,
+            "width": 3
+        },
+        {
+            "lane": 11,
+            "laneType": 1,
+            "measure": 18,
+            "noteType": 1,
+            "tick": 672,
+            "width": 3
+        },
+        {
+            "lane": 11,
+            "laneType": 1,
+            "measure": 20,
+            "noteType": 1,
+            "tick": 0,
+            "width": 3
+        },
+        {
+            "lane": 5,
+            "laneType": 1,
+            "measure": 20,
+            "noteType": 1,
+            "tick": 96,
+            "width": 3
+        },
+        {
+            "lane": 5,
+            "laneType": 1,
+            "measure": 20,
+            "noteType": 1,
+            "tick": 192,
+            "width": 3
+        },
+        {
+            "lane": 5,
+            "laneType": 1,
+            "measure": 20,
+            "noteType": 1,
+            "tick": 576,
+            "width": 2
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 20,
+            "noteType": 1,
+            "tick": 144,
+            "width": 2
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 20,
+            "noteType": 1,
+            "tick": 336,
+            "width": 2
+        },
+        {
+            "lane": 4,
+            "laneType": 1,
+            "measure": 20,
+            "noteType": 1,
+            "tick": 288,
+            "width": 3
+        },
+        {
+            "lane": 3,
+            "laneType": 1,
+            "measure": 20,
+            "noteType": 1,
+            "tick": 384,
+            "width": 3
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 20,
+            "noteType": 1,
+            "tick": 0,
+            "width": 3
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 20,
+            "noteType": 1,
+            "tick": 480,
+            "width": 3
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 20,
+            "noteType": 1,
+            "tick": 672,
+            "width": 2
+        },
+        {
+            "lane": 7,
+            "laneType": 1,
+            "measure": 20,
+            "noteType": 1,
+            "tick": 672,
+            "width": 3
+        },
+        {
+            "lane": 9,
+            "laneType": 1,
+            "measure": 20,
+            "noteType": 1,
+            "tick": 576,
+            "width": 2
+        },
+        {
+            "lane": 12,
+            "laneType": 1,
+            "measure": 20,
+            "noteType": 1,
+            "tick": 432,
+            "width": 2
+        },
+        {
+            "lane": 4,
+            "laneType": 1,
+            "measure": 21,
+            "noteType": 1,
+            "tick": 0,
+            "width": 2
+        },
+        {
+            "lane": 4,
+            "laneType": 1,
+            "measure": 21,
+            "noteType": 1,
+            "tick": 288,
+            "width": 3
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 21,
+            "noteType": 1,
+            "tick": 96,
+            "width": 2
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 21,
+            "noteType": 1,
+            "tick": 192,
+            "width": 2
+        },
+        {
+            "lane": 9,
+            "laneType": 1,
+            "measure": 21,
+            "noteType": 1,
+            "tick": 288,
+            "width": 3
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 21,
+            "noteType": 1,
+            "tick": 576,
+            "width": 4
+        },
+        {
+            "lane": 12,
+            "laneType": 1,
+            "measure": 21,
+            "noteType": 1,
+            "tick": 576,
+            "width": 2
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 27,
+            "noteType": 1,
+            "tick": 0,
+            "width": 2
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 27,
+            "noteType": 1,
+            "tick": 192,
+            "width": 2
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 27,
+            "noteType": 1,
+            "tick": 0,
+            "width": 2
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 27,
+            "noteType": 1,
+            "tick": 192,
+            "width": 2
+        },
+        {
+            "lane": 4,
+            "laneType": 1,
+            "measure": 27,
+            "noteType": 2,
+            "tick": 576,
+            "width": 8
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 28,
+            "noteType": 1,
+            "tick": 288,
+            "width": 3
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 28,
+            "noteType": 1,
+            "tick": 480,
+            "width": 3
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 28,
+            "noteType": 1,
+            "tick": 576,
+            "width": 3
+        },
+        {
+            "lane": 11,
+            "laneType": 1,
+            "measure": 28,
+            "noteType": 1,
+            "tick": 192,
+            "width": 3
+        },
+        {
+            "lane": 11,
+            "laneType": 1,
+            "measure": 28,
+            "noteType": 1,
+            "tick": 672,
+            "width": 3
+        },
+        {
+            "lane": 5,
+            "laneType": 1,
+            "measure": 28,
+            "noteType": 1,
+            "tick": 96,
+            "width": 3
+        },
+        {
+            "lane": 5,
+            "laneType": 1,
+            "measure": 28,
+            "noteType": 1,
+            "tick": 192,
+            "width": 3
+        },
+        {
+            "lane": 5,
+            "laneType": 1,
+            "measure": 28,
+            "noteType": 1,
+            "tick": 432,
+            "width": 3
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 28,
+            "noteType": 1,
+            "tick": 144,
+            "width": 3
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 28,
+            "noteType": 1,
+            "tick": 384,
+            "width": 3
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 28,
+            "noteType": 1,
+            "tick": 480,
+            "width": 3
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 28,
+            "noteType": 1,
+            "tick": 720,
+            "width": 3
+        },
+        {
+            "lane": 15,
+            "laneType": 1,
+            "measure": 28,
+            "noteType": 2,
+            "tick": 0,
+            "width": 1
+        },
+        {
+            "lane": 7,
+            "laneType": 1,
+            "measure": 29,
+            "noteType": 1,
+            "tick": 96,
+            "width": 3
+        },
+        {
+            "lane": 7,
+            "laneType": 1,
+            "measure": 29,
+            "noteType": 1,
+            "tick": 288,
+            "width": 3
+        },
+        {
+            "lane": 11,
+            "laneType": 1,
+            "measure": 29,
+            "noteType": 1,
+            "tick": 192,
+            "width": 3
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 29,
+            "noteType": 1,
+            "tick": 96,
+            "width": 3
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 29,
+            "noteType": 1,
+            "tick": 288,
+            "width": 3
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 29,
+            "noteType": 1,
+            "tick": 384,
+            "width": 4
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 29,
+            "noteType": 2,
+            "tick": 480,
+            "width": 4
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 29,
+            "noteType": 2,
+            "tick": 576,
+            "width": 4
+        },
+        {
+            "lane": 5,
+            "laneType": 1,
+            "measure": 29,
+            "noteType": 1,
+            "tick": 0,
+            "width": 3
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 29,
+            "noteType": 1,
+            "tick": 192,
+            "width": 3
+        },
+        {
+            "lane": 10,
+            "laneType": 1,
+            "measure": 29,
+            "noteType": 3,
+            "tick": 480,
+            "width": 4
+        },
+        {
+            "lane": 0,
+            "laneType": 1,
+            "measure": 29,
+            "noteType": 4,
+            "tick": 0,
+            "width": 1
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 31,
+            "noteType": 1,
+            "tick": 96,
+            "width": 2
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 31,
+            "noteType": 1,
+            "tick": 144,
+            "width": 2
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 31,
+            "noteType": 1,
+            "tick": 288,
+            "width": 4
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 31,
+            "noteType": 3,
+            "tick": 480,
+            "width": 4
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 31,
+            "noteType": 1,
+            "tick": 192,
+            "width": 4
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 31,
+            "noteType": 2,
+            "tick": 480,
+            "width": 4
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 31,
+            "noteType": 2,
+            "tick": 576,
+            "width": 4
+        },
+        {
+            "lane": 10,
+            "laneType": 1,
+            "measure": 31,
+            "noteType": 1,
+            "tick": 384,
+            "width": 4
+        },
+        {
+            "lane": 11,
+            "laneType": 1,
+            "measure": 31,
+            "noteType": 1,
+            "tick": 0,
+            "width": 3
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 36,
+            "noteType": 1,
+            "tick": 96,
+            "width": 4
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 36,
+            "noteType": 1,
+            "tick": 384,
+            "width": 4
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 36,
+            "noteType": 2,
+            "tick": 576,
+            "width": 2
+        },
+        {
+            "lane": 7,
+            "laneType": 1,
+            "measure": 36,
+            "noteType": 1,
+            "tick": 192,
+            "width": 2
+        },
+        {
+            "lane": 7,
+            "laneType": 1,
+            "measure": 36,
+            "noteType": 1,
+            "tick": 288,
+            "width": 2
+        },
+        {
+            "lane": 7,
+            "laneType": 1,
+            "measure": 36,
+            "noteType": 1,
+            "tick": 480,
+            "width": 2
+        },
+        {
+            "lane": 11,
+            "laneType": 1,
+            "measure": 36,
+            "noteType": 1,
+            "tick": 96,
+            "width": 3
+        },
+        {
+            "lane": 11,
+            "laneType": 1,
+            "measure": 36,
+            "noteType": 1,
+            "tick": 192,
+            "width": 3
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 36,
+            "noteType": 1,
+            "tick": 384,
+            "width": 3
+        },
+        {
+            "lane": 4,
+            "laneType": 1,
+            "measure": 36,
+            "noteType": 1,
+            "tick": 0,
+            "width": 2
+        },
+        {
+            "lane": 10,
+            "laneType": 1,
+            "measure": 36,
+            "noteType": 1,
+            "tick": 0,
+            "width": 2
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 36,
+            "noteType": 2,
+            "tick": 576,
+            "width": 2
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 37,
+            "noteType": 1,
+            "tick": 96,
+            "width": 4
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 37,
+            "noteType": 1,
+            "tick": 288,
+            "width": 2
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 37,
+            "noteType": 1,
+            "tick": 384,
+            "width": 4
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 37,
+            "noteType": 1,
+            "tick": 448,
+            "width": 4
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 37,
+            "noteType": 1,
+            "tick": 192,
+            "width": 4
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 37,
+            "noteType": 1,
+            "tick": 672,
+            "width": 2
+        },
+        {
+            "lane": 10,
+            "laneType": 1,
+            "measure": 37,
+            "noteType": 1,
+            "tick": 288,
+            "width": 4
+        },
+        {
+            "lane": 10,
+            "laneType": 1,
+            "measure": 37,
+            "noteType": 1,
+            "tick": 480,
+            "width": 3
+        },
+        {
+            "lane": 10,
+            "laneType": 1,
+            "measure": 37,
+            "noteType": 1,
+            "tick": 576,
+            "width": 2
+        },
+        {
+            "lane": 4,
+            "laneType": 1,
+            "measure": 37,
+            "noteType": 1,
+            "tick": 192,
+            "width": 2
+        },
+        {
+            "lane": 4,
+            "laneType": 1,
+            "measure": 37,
+            "noteType": 1,
+            "tick": 576,
+            "width": 4
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 37,
+            "noteType": 1,
+            "tick": 96,
+            "width": 2
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 37,
+            "noteType": 1,
+            "tick": 672,
+            "width": 4
+        },
+        {
+            "lane": 3,
+            "laneType": 1,
+            "measure": 37,
+            "noteType": 1,
+            "tick": 416,
+            "width": 3
+        },
+        {
+            "lane": 4,
+            "laneType": 1,
+            "measure": 38,
+            "noteType": 1,
+            "tick": 96,
+            "width": 4
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 38,
+            "noteType": 1,
+            "tick": 192,
+            "width": 4
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 38,
+            "noteType": 2,
+            "tick": 576,
+            "width": 2
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 38,
+            "noteType": 1,
+            "tick": 0,
+            "width": 12
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 38,
+            "noteType": 1,
+            "tick": 288,
+            "width": 2
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 38,
+            "noteType": 1,
+            "tick": 384,
+            "width": 12
+        },
+        {
+            "lane": 10,
+            "laneType": 1,
+            "measure": 38,
+            "noteType": 1,
+            "tick": 96,
+            "width": 2
+        },
+        {
+            "lane": 12,
+            "laneType": 1,
+            "measure": 38,
+            "noteType": 1,
+            "tick": 192,
+            "width": 2
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 38,
+            "noteType": 1,
+            "tick": 288,
+            "width": 6
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 38,
+            "noteType": 2,
+            "tick": 576,
+            "width": 2
+        },
+        {
+            "lane": 10,
+            "laneType": 1,
+            "measure": 3,
+            "noteType": 1,
+            "tick": 384,
+            "width": 4
+        },
+        {
+            "lane": 10,
+            "laneType": 1,
+            "measure": 3,
+            "noteType": 1,
+            "tick": 528,
+            "width": 2
+        },
+        {
+            "lane": 4,
+            "laneType": 1,
+            "measure": 3,
+            "noteType": 1,
+            "tick": 480,
+            "width": 2
+        },
+        {
+            "lane": 4,
+            "laneType": 1,
+            "measure": 3,
+            "noteType": 1,
+            "tick": 576,
+            "width": 2
+        },
+        {
+            "lane": 5,
+            "laneType": 1,
+            "measure": 3,
+            "noteType": 1,
+            "tick": 672,
+            "width": 3
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 3,
+            "noteType": 1,
+            "tick": 720,
+            "width": 3
+        },
+        {
+            "lane": 10,
+            "laneType": 1,
+            "measure": 8,
+            "noteType": 1,
+            "tick": 96,
+            "width": 4
+        },
+        {
+            "lane": 10,
+            "laneType": 1,
+            "measure": 8,
+            "noteType": 1,
+            "tick": 480,
+            "width": 3
+        },
+        {
+            "lane": 10,
+            "laneType": 1,
+            "measure": 8,
+            "noteType": 1,
+            "tick": 576,
+            "width": 2
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 8,
+            "noteType": 1,
+            "tick": 192,
+            "width": 4
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 8,
+            "noteType": 1,
+            "tick": 96,
+            "width": 2
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 8,
+            "noteType": 1,
+            "tick": 288,
+            "width": 4
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 8,
+            "noteType": 1,
+            "tick": 384,
+            "width": 4
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 8,
+            "noteType": 1,
+            "tick": 448,
+            "width": 4
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 8,
+            "noteType": 1,
+            "tick": 672,
+            "width": 3
+        },
+        {
+            "lane": 3,
+            "laneType": 1,
+            "measure": 8,
+            "noteType": 1,
+            "tick": 416,
+            "width": 3
+        },
+        {
+            "lane": 4,
+            "laneType": 1,
+            "measure": 8,
+            "noteType": 1,
+            "tick": 192,
+            "width": 2
+        },
+        {
+            "lane": 4,
+            "laneType": 1,
+            "measure": 8,
+            "noteType": 1,
+            "tick": 576,
+            "width": 3
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 8,
+            "noteType": 1,
+            "tick": 288,
+            "width": 2
+        },
+        {
+            "lane": 12,
+            "laneType": 1,
+            "measure": 8,
+            "noteType": 1,
+            "tick": 672,
+            "width": 2
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 9,
+            "noteType": 1,
+            "tick": 0,
+            "width": 6
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 9,
+            "noteType": 1,
+            "tick": 192,
+            "width": 2
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 9,
+            "noteType": 1,
+            "tick": 576,
+            "width": 3
+        },
+        {
+            "lane": 5,
+            "laneType": 1,
+            "measure": 9,
+            "noteType": 1,
+            "tick": 96,
+            "width": 3
+        },
+        {
+            "lane": 3,
+            "laneType": 1,
+            "measure": 9,
+            "noteType": 1,
+            "tick": 192,
+            "width": 3
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 9,
+            "noteType": 1,
+            "tick": 288,
+            "width": 6
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 9,
+            "noteType": 1,
+            "tick": 672,
+            "width": 2
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 9,
+            "noteType": 1,
+            "tick": 0,
+            "width": 2
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 9,
+            "noteType": 1,
+            "tick": 288,
+            "width": 2
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 9,
+            "noteType": 1,
+            "tick": 384,
+            "width": 4
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 9,
+            "noteType": 1,
+            "tick": 576,
+            "width": 2
+        },
+        {
+            "lane": 10,
+            "laneType": 1,
+            "measure": 9,
+            "noteType": 1,
+            "tick": 96,
+            "width": 2
+        },
+        {
+            "lane": 10,
+            "laneType": 1,
+            "measure": 9,
+            "noteType": 1,
+            "tick": 384,
+            "width": 4
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 10,
+            "noteType": 1,
+            "tick": 144,
+            "width": 2
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 10,
+            "noteType": 1,
+            "tick": 288,
+            "width": 6
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 10,
+            "noteType": 1,
+            "tick": 96,
+            "width": 2
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 10,
+            "noteType": 1,
+            "tick": 192,
+            "width": 2
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 10,
+            "noteType": 1,
+            "tick": 576,
+            "width": 3
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 10,
+            "noteType": 1,
+            "tick": 384,
+            "width": 6
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 10,
+            "noteType": 1,
+            "tick": 672,
+            "width": 3
+        },
+        {
+            "lane": 11,
+            "laneType": 1,
+            "measure": 10,
+            "noteType": 1,
+            "tick": 576,
+            "width": 3
+        },
+        {
+            "lane": 7,
+            "laneType": 1,
+            "measure": 10,
+            "noteType": 1,
+            "tick": 672,
+            "width": 3
+        },
+        {
+            "lane": 4,
+            "laneType": 1,
+            "measure": 10,
+            "noteType": 1,
+            "tick": 288,
+            "width": 2
+        },
+        {
+            "lane": 12,
+            "laneType": 1,
+            "measure": 10,
+            "noteType": 1,
+            "tick": 384,
+            "width": 2
+        },
+        {
+            "lane": 11,
+            "laneType": 1,
+            "measure": 11,
+            "noteType": 1,
+            "tick": 96,
+            "width": 3
+        },
+        {
+            "lane": 11,
+            "laneType": 1,
+            "measure": 11,
+            "noteType": 1,
+            "tick": 288,
+            "width": 3
+        },
+        {
+            "lane": 11,
+            "laneType": 1,
+            "measure": 11,
+            "noteType": 1,
+            "tick": 672,
+            "width": 3
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 11,
+            "noteType": 1,
+            "tick": 288,
+            "width": 3
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 11,
+            "noteType": 1,
+            "tick": 480,
+            "width": 3
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 11,
+            "noteType": 1,
+            "tick": 672,
+            "width": 3
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 11,
+            "noteType": 1,
+            "tick": 0,
+            "width": 3
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 11,
+            "noteType": 1,
+            "tick": 96,
+            "width": 3
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 11,
+            "noteType": 1,
+            "tick": 384,
+            "width": 3
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 11,
+            "noteType": 1,
+            "tick": 576,
+            "width": 3
+        },
+        {
+            "lane": 5,
+            "laneType": 1,
+            "measure": 11,
+            "noteType": 1,
+            "tick": 0,
+            "width": 3
+        },
+        {
+            "lane": 5,
+            "laneType": 1,
+            "measure": 11,
+            "noteType": 1,
+            "tick": 384,
+            "width": 3
+        },
+        {
+            "lane": 5,
+            "laneType": 1,
+            "measure": 11,
+            "noteType": 1,
+            "tick": 480,
+            "width": 3
+        },
+        {
+            "lane": 5,
+            "laneType": 1,
+            "measure": 11,
+            "noteType": 1,
+            "tick": 576,
+            "width": 3
+        },
+        {
+            "lane": 0,
+            "laneType": 1,
+            "measure": 11,
+            "noteType": 4,
+            "tick": 0,
+            "width": 1
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 16,
+            "noteType": 1,
+            "tick": 96,
+            "width": 6
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 16,
+            "noteType": 1,
+            "tick": 288,
+            "width": 2
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 16,
+            "noteType": 1,
+            "tick": 384,
+            "width": 6
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 16,
+            "noteType": 1,
+            "tick": 576,
+            "width": 3
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 16,
+            "noteType": 1,
+            "tick": 192,
+            "width": 2
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 16,
+            "noteType": 1,
+            "tick": 480,
+            "width": 6
+        },
+        {
+            "lane": 10,
+            "laneType": 1,
+            "measure": 16,
+            "noteType": 1,
+            "tick": 192,
+            "width": 2
+        },
+        {
+            "lane": 10,
+            "laneType": 1,
+            "measure": 16,
+            "noteType": 1,
+            "tick": 384,
+            "width": 2
+        },
+        {
+            "lane": 10,
+            "laneType": 1,
+            "measure": 16,
+            "noteType": 1,
+            "tick": 672,
+            "width": 4
+        },
+        {
+            "lane": 5,
+            "laneType": 1,
+            "measure": 16,
+            "noteType": 1,
+            "tick": 672,
+            "width": 3
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 16,
+            "noteType": 1,
+            "tick": 144,
+            "width": 2
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 16,
+            "noteType": 1,
+            "tick": 576,
+            "width": 2
+        },
+        {
+            "lane": 12,
+            "laneType": 1,
+            "measure": 16,
+            "noteType": 1,
+            "tick": 288,
+            "width": 2
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 25,
+            "noteType": 1,
+            "tick": 192,
+            "width": 2
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 25,
+            "noteType": 1,
+            "tick": 576,
+            "width": 4
+        },
+        {
+            "lane": 4,
+            "laneType": 1,
+            "measure": 25,
+            "noteType": 1,
+            "tick": 288,
+            "width": 4
+        },
+        {
+            "lane": 4,
+            "laneType": 1,
+            "measure": 25,
+            "noteType": 1,
+            "tick": 576,
+            "width": 2
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 25,
+            "noteType": 1,
+            "tick": 384,
+            "width": 4
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 25,
+            "noteType": 1,
+            "tick": 672,
+            "width": 2
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 25,
+            "noteType": 1,
+            "tick": 192,
+            "width": 4
+        },
+        {
+            "lane": 11,
+            "laneType": 1,
+            "measure": 25,
+            "noteType": 1,
+            "tick": 0,
+            "width": 3
+        },
+        {
+            "lane": 10,
+            "laneType": 1,
+            "measure": 25,
+            "noteType": 1,
+            "tick": 288,
+            "width": 2
+        },
+        {
+            "lane": 12,
+            "laneType": 1,
+            "measure": 25,
+            "noteType": 1,
+            "tick": 384,
+            "width": 2
+        },
+        {
+            "lane": 5,
+            "laneType": 1,
+            "measure": 25,
+            "noteType": 1,
+            "tick": 0,
+            "width": 2
+        },
+        {
+            "lane": 5,
+            "laneType": 1,
+            "measure": 25,
+            "noteType": 1,
+            "tick": 96,
+            "width": 2
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 26,
+            "noteType": 1,
+            "tick": 576,
+            "width": 2
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 26,
+            "noteType": 1,
+            "tick": 672,
+            "width": 6
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 26,
+            "noteType": 1,
+            "tick": 672,
+            "width": 6
+        },
+        {
+            "lane": 10,
+            "laneType": 1,
+            "measure": 33,
+            "noteType": 1,
+            "tick": 384,
+            "width": 4
+        },
+        {
+            "lane": 10,
+            "laneType": 1,
+            "measure": 33,
+            "noteType": 2,
+            "tick": 480,
+            "width": 4
+        },
+        {
+            "lane": 10,
+            "laneType": 1,
+            "measure": 33,
+            "noteType": 2,
+            "tick": 576,
+            "width": 4
+        },
+        {
+            "lane": 10,
+            "laneType": 1,
+            "measure": 33,
+            "noteType": 1,
+            "tick": 672,
+            "width": 2
+        },
+        {
+            "lane": 4,
+            "laneType": 1,
+            "measure": 33,
+            "noteType": 1,
+            "tick": 672,
+            "width": 2
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 33,
+            "noteType": 1,
+            "tick": 96,
+            "width": 3
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 33,
+            "noteType": 1,
+            "tick": 288,
+            "width": 3
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 33,
+            "noteType": 1,
+            "tick": 192,
+            "width": 3
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 33,
+            "noteType": 3,
+            "tick": 480,
+            "width": 4
+        },
+        {
+            "lane": 11,
+            "laneType": 1,
+            "measure": 33,
+            "noteType": 1,
+            "tick": 96,
+            "width": 3
+        },
+        {
+            "lane": 11,
+            "laneType": 1,
+            "measure": 33,
+            "noteType": 1,
+            "tick": 288,
+            "width": 3
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 33,
+            "noteType": 1,
+            "tick": 0,
+            "width": 3
+        },
+        {
+            "lane": 7,
+            "laneType": 1,
+            "measure": 33,
+            "noteType": 1,
+            "tick": 192,
+            "width": 3
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 34,
+            "noteType": 1,
+            "tick": 0,
+            "width": 6
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 34,
+            "noteType": 1,
+            "tick": 192,
+            "width": 6
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 34,
+            "noteType": 1,
+            "tick": 288,
+            "width": 2
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 34,
+            "noteType": 1,
+            "tick": 384,
+            "width": 6
+        },
+        {
+            "lane": 12,
+            "laneType": 1,
+            "measure": 34,
+            "noteType": 1,
+            "tick": 96,
+            "width": 2
+        },
+        {
+            "lane": 12,
+            "laneType": 1,
+            "measure": 34,
+            "noteType": 1,
+            "tick": 480,
+            "width": 2
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 34,
+            "noteType": 1,
+            "tick": 0,
+            "width": 6
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 34,
+            "noteType": 1,
+            "tick": 96,
+            "width": 2
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 34,
+            "noteType": 1,
+            "tick": 192,
+            "width": 6
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 34,
+            "noteType": 1,
+            "tick": 384,
+            "width": 6
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 34,
+            "noteType": 1,
+            "tick": 480,
+            "width": 2
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 34,
+            "noteType": 1,
+            "tick": 672,
+            "width": 12
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 34,
+            "noteType": 1,
+            "tick": 288,
+            "width": 2
+        },
+        {
+            "lane": 7,
+            "laneType": 1,
+            "measure": 35,
+            "noteType": 1,
+            "tick": 0,
+            "width": 2
+        },
+        {
+            "lane": 7,
+            "laneType": 1,
+            "measure": 35,
+            "noteType": 1,
+            "tick": 192,
+            "width": 2
+        },
+        {
+            "lane": 7,
+            "laneType": 1,
+            "measure": 35,
+            "noteType": 1,
+            "tick": 384,
+            "width": 2
+        },
+        {
+            "lane": 7,
+            "laneType": 1,
+            "measure": 35,
+            "noteType": 1,
+            "tick": 480,
+            "width": 7
+        },
+        {
+            "lane": 7,
+            "laneType": 1,
+            "measure": 35,
+            "noteType": 1,
+            "tick": 672,
+            "width": 2
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 35,
+            "noteType": 1,
+            "tick": 96,
+            "width": 12
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 35,
+            "noteType": 1,
+            "tick": 192,
+            "width": 3
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 35,
+            "noteType": 1,
+            "tick": 288,
+            "width": 12
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 35,
+            "noteType": 1,
+            "tick": 576,
+            "width": 7
+        },
+        {
+            "lane": 3,
+            "laneType": 1,
+            "measure": 35,
+            "noteType": 1,
+            "tick": 480,
+            "width": 2
+        },
+        {
+            "lane": 11,
+            "laneType": 1,
+            "measure": 35,
+            "noteType": 1,
+            "tick": 384,
+            "width": 3
+        },
+        {
+            "lane": 11,
+            "laneType": 1,
+            "measure": 35,
+            "noteType": 1,
+            "tick": 576,
+            "width": 2
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 30,
+            "noteType": 1,
+            "tick": 0,
+            "width": 6
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 30,
+            "noteType": 1,
+            "tick": 96,
+            "width": 3
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 30,
+            "noteType": 1,
+            "tick": 192,
+            "width": 3
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 30,
+            "noteType": 1,
+            "tick": 432,
+            "width": 3
+        },
+        {
+            "lane": 5,
+            "laneType": 1,
+            "measure": 30,
+            "noteType": 1,
+            "tick": 0,
+            "width": 2
+        },
+        {
+            "lane": 5,
+            "laneType": 1,
+            "measure": 30,
+            "noteType": 1,
+            "tick": 144,
+            "width": 3
+        },
+        {
+            "lane": 5,
+            "laneType": 1,
+            "measure": 30,
+            "noteType": 1,
+            "tick": 384,
+            "width": 3
+        },
+        {
+            "lane": 5,
+            "laneType": 1,
+            "measure": 30,
+            "noteType": 1,
+            "tick": 480,
+            "width": 3
+        },
+        {
+            "lane": 11,
+            "laneType": 1,
+            "measure": 30,
+            "noteType": 1,
+            "tick": 288,
+            "width": 3
+        },
+        {
+            "lane": 11,
+            "laneType": 1,
+            "measure": 30,
+            "noteType": 1,
+            "tick": 480,
+            "width": 3
+        },
+        {
+            "lane": 11,
+            "laneType": 1,
+            "measure": 30,
+            "noteType": 1,
+            "tick": 576,
+            "width": 3
+        },
+        {
+            "lane": 3,
+            "laneType": 1,
+            "measure": 30,
+            "noteType": 1,
+            "tick": 672,
+            "width": 3
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 30,
+            "noteType": 1,
+            "tick": 192,
+            "width": 3
+        },
+        {
+            "lane": 7,
+            "laneType": 1,
+            "measure": 30,
+            "noteType": 1,
+            "tick": 720,
+            "width": 3
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 32,
+            "noteType": 1,
+            "tick": 0,
+            "width": 6
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 32,
+            "noteType": 1,
+            "tick": 192,
+            "width": 3
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 32,
+            "noteType": 1,
+            "tick": 672,
+            "width": 3
+        },
+        {
+            "lane": 9,
+            "laneType": 1,
+            "measure": 32,
+            "noteType": 1,
+            "tick": 0,
+            "width": 2
+        },
+        {
+            "lane": 11,
+            "laneType": 1,
+            "measure": 32,
+            "noteType": 1,
+            "tick": 288,
+            "width": 3
+        },
+        {
+            "lane": 11,
+            "laneType": 1,
+            "measure": 32,
+            "noteType": 1,
+            "tick": 480,
+            "width": 3
+        },
+        {
+            "lane": 11,
+            "laneType": 1,
+            "measure": 32,
+            "noteType": 1,
+            "tick": 576,
+            "width": 3
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 32,
+            "noteType": 1,
+            "tick": 96,
+            "width": 3
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 32,
+            "noteType": 1,
+            "tick": 192,
+            "width": 3
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 32,
+            "noteType": 1,
+            "tick": 432,
+            "width": 3
+        },
+        {
+            "lane": 5,
+            "laneType": 1,
+            "measure": 32,
+            "noteType": 1,
+            "tick": 144,
+            "width": 3
+        },
+        {
+            "lane": 5,
+            "laneType": 1,
+            "measure": 32,
+            "noteType": 1,
+            "tick": 384,
+            "width": 3
+        },
+        {
+            "lane": 5,
+            "laneType": 1,
+            "measure": 32,
+            "noteType": 1,
+            "tick": 480,
+            "width": 3
+        },
+        {
+            "lane": 5,
+            "laneType": 1,
+            "measure": 32,
+            "noteType": 1,
+            "tick": 720,
+            "width": 3
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 22,
+            "noteType": 1,
+            "tick": 96,
+            "width": 3
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 22,
+            "noteType": 1,
+            "tick": 192,
+            "width": 3
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 22,
+            "noteType": 1,
+            "tick": 144,
+            "width": 2
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 22,
+            "noteType": 1,
+            "tick": 336,
+            "width": 2
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 22,
+            "noteType": 1,
+            "tick": 672,
+            "width": 3
+        },
+        {
+            "lane": 9,
+            "laneType": 1,
+            "measure": 22,
+            "noteType": 1,
+            "tick": 288,
+            "width": 3
+        },
+        {
+            "lane": 9,
+            "laneType": 1,
+            "measure": 22,
+            "noteType": 1,
+            "tick": 576,
+            "width": 2
+        },
+        {
+            "lane": 10,
+            "laneType": 1,
+            "measure": 22,
+            "noteType": 1,
+            "tick": 384,
+            "width": 3
+        },
+        {
+            "lane": 11,
+            "laneType": 1,
+            "measure": 22,
+            "noteType": 1,
+            "tick": 480,
+            "width": 3
+        },
+        {
+            "lane": 5,
+            "laneType": 1,
+            "measure": 22,
+            "noteType": 1,
+            "tick": 576,
+            "width": 2
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 22,
+            "noteType": 1,
+            "tick": 432,
+            "width": 2
+        },
+        {
+            "lane": 12,
+            "laneType": 1,
+            "measure": 22,
+            "noteType": 1,
+            "tick": 672,
+            "width": 2
+        },
+        {
+            "lane": 9,
+            "laneType": 1,
+            "measure": 23,
+            "noteType": 1,
+            "tick": 288,
+            "width": 3
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 23,
+            "noteType": 1,
+            "tick": 96,
+            "width": 2
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 23,
+            "noteType": 1,
+            "tick": 192,
+            "width": 2
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 23,
+            "noteType": 1,
+            "tick": 576,
+            "width": 2
+        },
+        {
+            "lane": 4,
+            "laneType": 1,
+            "measure": 23,
+            "noteType": 1,
+            "tick": 288,
+            "width": 3
+        },
+        {
+            "lane": 10,
+            "laneType": 1,
+            "measure": 23,
+            "noteType": 1,
+            "tick": 0,
+            "width": 2
+        },
+        {
+            "lane": 12,
+            "laneType": 1,
+            "measure": 23,
+            "noteType": 1,
+            "tick": 672,
+            "width": 2
+        },
+        {
+            "lane": 5,
+            "laneType": 1,
+            "measure": 23,
+            "noteType": 1,
+            "tick": 576,
+            "width": 3
+        },
+        {
+            "lane": 0,
+            "laneType": 1,
+            "measure": 23,
+            "noteType": 4,
+            "tick": 0,
+            "width": 1
+        },
+        {
+            "lane": 10,
+            "laneType": 1,
+            "measure": 39,
+            "noteType": 1,
+            "tick": 672,
+            "width": 2
+        },
+        {
+            "lane": 4,
+            "laneType": 1,
+            "measure": 39,
+            "noteType": 1,
+            "tick": 672,
+            "width": 2
+        },
+        {
+            "lane": 7,
+            "laneType": 1,
+            "measure": 40,
+            "noteType": 1,
+            "tick": 0,
+            "width": 2
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 14,
+            "noteType": 1,
+            "tick": 96,
+            "width": 3
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 14,
+            "noteType": 1,
+            "tick": 288,
+            "width": 3
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 14,
+            "noteType": 1,
+            "tick": 384,
+            "width": 6
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 14,
+            "noteType": 1,
+            "tick": 576,
+            "width": 3
+        },
+        {
+            "lane": 5,
+            "laneType": 1,
+            "measure": 14,
+            "noteType": 1,
+            "tick": 192,
+            "width": 3
+        },
+        {
+            "lane": 5,
+            "laneType": 1,
+            "measure": 14,
+            "noteType": 1,
+            "tick": 672,
+            "width": 3
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 14,
+            "noteType": 1,
+            "tick": 480,
+            "width": 6
+        },
+        {
+            "lane": 10,
+            "laneType": 1,
+            "measure": 14,
+            "noteType": 1,
+            "tick": 192,
+            "width": 2
+        },
+        {
+            "lane": 10,
+            "laneType": 1,
+            "measure": 14,
+            "noteType": 1,
+            "tick": 384,
+            "width": 2
+        },
+        {
+            "lane": 10,
+            "laneType": 1,
+            "measure": 14,
+            "noteType": 1,
+            "tick": 672,
+            "width": 4
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 14,
+            "noteType": 1,
+            "tick": 144,
+            "width": 2
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 14,
+            "noteType": 1,
+            "tick": 576,
+            "width": 2
+        },
+        {
+            "lane": 12,
+            "laneType": 1,
+            "measure": 14,
+            "noteType": 1,
+            "tick": 288,
+            "width": 2
+        },
+        {
+            "lane": 10,
+            "laneType": 1,
+            "measure": 15,
+            "noteType": 1,
+            "tick": 0,
+            "width": 2
+        },
+        {
+            "lane": 10,
+            "laneType": 1,
+            "measure": 15,
+            "noteType": 1,
+            "tick": 192,
+            "width": 4
+        },
+        {
+            "lane": 12,
+            "laneType": 1,
+            "measure": 15,
+            "noteType": 1,
+            "tick": 96,
+            "width": 2
+        },
+        {
+            "lane": 12,
+            "laneType": 1,
+            "measure": 15,
+            "noteType": 1,
+            "tick": 576,
+            "width": 2
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 15,
+            "noteType": 1,
+            "tick": 288,
+            "width": 4
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 15,
+            "noteType": 1,
+            "tick": 0,
+            "width": 3
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 15,
+            "noteType": 1,
+            "tick": 192,
+            "width": 2
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 15,
+            "noteType": 1,
+            "tick": 288,
+            "width": 2
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 15,
+            "noteType": 1,
+            "tick": 576,
+            "width": 4
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 24,
+            "noteType": 1,
+            "tick": 96,
+            "width": 6
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 24,
+            "noteType": 1,
+            "tick": 192,
+            "width": 2
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 24,
+            "noteType": 1,
+            "tick": 384,
+            "width": 6
+        },
+        {
+            "lane": 8,
+            "laneType": 1,
+            "measure": 24,
+            "noteType": 1,
+            "tick": 672,
+            "width": 3
+        },
+        {
+            "lane": 12,
+            "laneType": 1,
+            "measure": 24,
+            "noteType": 1,
+            "tick": 288,
+            "width": 2
+        },
+        {
+            "lane": 4,
+            "laneType": 1,
+            "measure": 24,
+            "noteType": 1,
+            "tick": 192,
+            "width": 2
+        },
+        {
+            "lane": 4,
+            "laneType": 1,
+            "measure": 24,
+            "noteType": 1,
+            "tick": 384,
+            "width": 2
+        },
+        {
+            "lane": 4,
+            "laneType": 1,
+            "measure": 24,
+            "noteType": 1,
+            "tick": 480,
+            "width": 6
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 24,
+            "noteType": 1,
+            "tick": 288,
+            "width": 2
+        },
+        {
+            "lane": 2,
+            "laneType": 1,
+            "measure": 24,
+            "noteType": 1,
+            "tick": 672,
+            "width": 4
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 24,
+            "noteType": 1,
+            "tick": 144,
+            "width": 2
+        },
+        {
+            "lane": 6,
+            "laneType": 1,
+            "measure": 24,
+            "noteType": 1,
+            "tick": 576,
+            "width": 2
+        },
+        {
+            "lane": 11,
+            "laneType": 1,
+            "measure": 24,
+            "noteType": 1,
+            "tick": 576,
+            "width": 3
+        },
+        {
+            "lane": 15,
+            "laneType": 1,
+            "measure": 24,
+            "noteType": 1,
+            "tick": 0,
+            "width": 1
+        }
+    ],
+    "slideNotes": [
+        [
+            {
+                "lane": 2,
+                "laneType": 3,
+                "measure": 0,
+                "noteType": 1,
+                "tick": 0,
+                "width": 4,
+                "channel": 48
+            },
+            {
+                "lane": 2,
+                "laneType": 3,
+                "measure": 0,
+                "noteType": 2,
+                "tick": 96,
+                "width": 4,
+                "channel": 48
+            }
+        ],
+        [
+            {
+                "lane": 10,
+                "laneType": 3,
+                "measure": 0,
+                "noteType": 1,
+                "tick": 0,
+                "width": 4,
+                "channel": 49
+            },
+            {
+                "lane": 10,
+                "laneType": 3,
+                "measure": 0,
+                "noteType": 2,
+                "tick": 96,
+                "width": 4,
+                "channel": 49
+            }
+        ],
+        [
+            {
+                "lane": 2,
+                "laneType": 3,
+                "measure": 1,
+                "noteType": 1,
+                "tick": 0,
+                "width": 2,
+                "channel": 49
+            },
+            {
+                "lane": 2,
+                "laneType": 3,
+                "measure": 1,
+                "noteType": 2,
+                "tick": 96,
+                "width": 2,
+                "channel": 49
+            }
+        ],
+        [
+            {
+                "lane": 8,
+                "laneType": 3,
+                "measure": 1,
+                "noteType": 1,
+                "tick": 0,
+                "width": 4,
+                "channel": 48
+            },
+            {
+                "lane": 8,
+                "laneType": 3,
+                "measure": 1,
+                "noteType": 2,
+                "tick": 96,
+                "width": 4,
+                "channel": 48
+            }
+        ],
+        [
+            {
+                "lane": 4,
+                "laneType": 3,
+                "measure": 2,
+                "noteType": 1,
+                "tick": 0,
+                "width": 4,
+                "channel": 48
+            },
+            {
+                "lane": 4,
+                "laneType": 3,
+                "measure": 2,
+                "noteType": 2,
+                "tick": 96,
+                "width": 4,
+                "channel": 48
+            }
+        ],
+        [
+            {
+                "lane": 12,
+                "laneType": 3,
+                "measure": 2,
+                "noteType": 1,
+                "tick": 0,
+                "width": 2,
+                "channel": 49
+            },
+            {
+                "lane": 12,
+                "laneType": 3,
+                "measure": 2,
+                "noteType": 2,
+                "tick": 96,
+                "width": 2,
+                "channel": 49
+            }
+        ],
+        [
+            {
+                "lane": 7,
+                "laneType": 3,
+                "measure": 2,
+                "noteType": 1,
+                "tick": 384,
+                "width": 2,
+                "channel": 49
+            },
+            {
+                "lane": 7,
+                "laneType": 3,
+                "measure": 2,
+                "noteType": 2,
+                "tick": 480,
+                "width": 2,
+                "channel": 49
+            }
+        ],
+        [
+            {
+                "lane": 10,
+                "laneType": 3,
+                "measure": 2,
+                "noteType": 1,
+                "tick": 384,
+                "width": 4,
+                "channel": 48
+            },
+            {
+                "lane": 10,
+                "laneType": 3,
+                "measure": 2,
+                "noteType": 2,
+                "tick": 480,
+                "width": 4,
+                "channel": 48
+            }
+        ],
+        [
+            {
+                "lane": 2,
+                "laneType": 3,
+                "measure": 2,
+                "noteType": 1,
+                "tick": 576,
+                "width": 4,
+                "channel": 48
+            },
+            {
+                "lane": 2,
+                "laneType": 3,
+                "measure": 2,
+                "noteType": 2,
+                "tick": 672,
+                "width": 4,
+                "channel": 48
+            }
+        ],
+        [
+            {
+                "lane": 7,
+                "laneType": 3,
+                "measure": 2,
+                "noteType": 1,
+                "tick": 576,
+                "width": 2,
+                "channel": 49
+            },
+            {
+                "lane": 7,
+                "laneType": 3,
+                "measure": 2,
+                "noteType": 2,
+                "tick": 672,
+                "width": 2,
+                "channel": 49
+            }
+        ],
+        [
+            {
+                "lane": 10,
+                "laneType": 3,
+                "measure": 3,
+                "noteType": 1,
+                "tick": 0,
+                "width": 4,
+                "channel": 49
+            },
+            {
+                "lane": 6,
+                "laneType": 3,
+                "measure": 3,
+                "noteType": 2,
+                "tick": 192,
+                "width": 4,
+                "channel": 49
+            }
+        ],
+        [
+            {
+                "lane": 2,
+                "laneType": 3,
+                "measure": 3,
+                "noteType": 1,
+                "tick": 192,
+                "width": 4,
+                "channel": 48
+            },
+            {
+                "lane": 6,
+                "laneType": 3,
+                "measure": 3,
+                "noteType": 2,
+                "tick": 384,
+                "width": 4,
+                "channel": 48
+            }
+        ],
+        [
+            {
+                "lane": 5,
+                "laneType": 3,
+                "measure": 5,
+                "noteType": 1,
+                "tick": 576,
+                "width": 3,
+                "channel": 48
+            },
+            {
+                "lane": 2,
+                "laneType": 3,
+                "measure": 6,
+                "noteType": 2,
+                "tick": 0,
+                "width": 3,
+                "channel": 48
+            }
+        ],
+        [
+            {
+                "lane": 12,
+                "laneType": 3,
+                "measure": 5,
+                "noteType": 1,
+                "tick": 576,
+                "width": 2,
+                "channel": 49
+            },
+            {
+                "lane": 8,
+                "laneType": 3,
+                "measure": 5,
+                "noteType": 5,
+                "tick": 672,
+                "width": 2,
+                "channel": 49
+            },
+            {
+                "lane": 12,
+                "laneType": 3,
+                "measure": 6,
+                "noteType": 2,
+                "tick": 0,
+                "width": 2,
+                "channel": 49
+            }
+        ],
+        [
+            {
+                "lane": 8,
+                "laneType": 3,
+                "measure": 7,
+                "noteType": 1,
+                "tick": 0,
+                "width": 3,
+                "channel": 49
+            },
+            {
+                "lane": 5,
+                "laneType": 3,
+                "measure": 7,
+                "noteType": 3,
+                "tick": 96,
+                "width": 3,
+                "channel": 49
+            },
+            {
+                "lane": 8,
+                "laneType": 3,
+                "measure": 7,
+                "noteType": 2,
+                "tick": 192,
+                "width": 3,
+                "channel": 49
+            }
+        ],
+        [
+            {
+                "lane": 5,
+                "laneType": 3,
+                "measure": 7,
+                "noteType": 1,
+                "tick": 0,
+                "width": 3,
+                "channel": 48
+            },
+            {
+                "lane": 2,
+                "laneType": 3,
+                "measure": 7,
+                "noteType": 3,
+                "tick": 96,
+                "width": 3,
+                "channel": 48
+            },
+            {
+                "lane": 5,
+                "laneType": 3,
+                "measure": 7,
+                "noteType": 2,
+                "tick": 192,
+                "width": 3,
+                "channel": 48
+            }
+        ],
+        [
+            {
+                "lane": 5,
+                "laneType": 3,
+                "measure": 7,
+                "noteType": 1,
+                "tick": 384,
+                "width": 3,
+                "channel": 48
+            },
+            {
+                "lane": 8,
+                "laneType": 3,
+                "measure": 7,
+                "noteType": 3,
+                "tick": 480,
+                "width": 3,
+                "channel": 48
+            },
+            {
+                "lane": 5,
+                "laneType": 3,
+                "measure": 7,
+                "noteType": 3,
+                "tick": 576,
+                "width": 3,
+                "channel": 48
+            },
+            {
+                "lane": 2,
+                "laneType": 3,
+                "measure": 7,
+                "noteType": 5,
+                "tick": 672,
+                "width": 3,
+                "channel": 48
+            },
+            {
+                "lane": 5,
+                "laneType": 3,
+                "measure": 8,
+                "noteType": 2,
+                "tick": 0,
+                "width": 3,
+                "channel": 48
+            }
+        ],
+        [
+            {
+                "lane": 8,
+                "laneType": 3,
+                "measure": 7,
+                "noteType": 1,
+                "tick": 384,
+                "width": 3,
+                "channel": 49
+            },
+            {
+                "lane": 11,
+                "laneType": 3,
+                "measure": 7,
+                "noteType": 3,
+                "tick": 480,
+                "width": 3,
+                "channel": 49
+            },
+            {
+                "lane": 8,
+                "laneType": 3,
+                "measure": 7,
+                "noteType": 3,
+                "tick": 576,
+                "width": 3,
+                "channel": 49
+            },
+            {
+                "lane": 11,
+                "laneType": 3,
+                "measure": 7,
+                "noteType": 5,
+                "tick": 672,
+                "width": 3,
+                "channel": 49
+            },
+            {
+                "lane": 8,
+                "laneType": 3,
+                "measure": 8,
+                "noteType": 2,
+                "tick": 0,
+                "width": 3,
+                "channel": 49
+            }
+        ],
+        [
+            {
+                "lane": 8,
+                "laneType": 3,
+                "measure": 9,
+                "noteType": 1,
+                "tick": 576,
+                "width": 3,
+                "channel": 49
+            },
+            {
+                "lane": 11,
+                "laneType": 3,
+                "measure": 10,
+                "noteType": 2,
+                "tick": 0,
+                "width": 3,
+                "channel": 49
+            }
+        ],
+        [
+            {
+                "lane": 2,
+                "laneType": 3,
+                "measure": 9,
+                "noteType": 1,
+                "tick": 576,
+                "width": 2,
+                "channel": 48
+            },
+            {
+                "lane": 6,
+                "laneType": 3,
+                "measure": 9,
+                "noteType": 5,
+                "tick": 672,
+                "width": 2,
+                "channel": 48
+            },
+            {
+                "lane": 2,
+                "laneType": 3,
+                "measure": 10,
+                "noteType": 2,
+                "tick": 0,
+                "width": 2,
+                "channel": 48
+            }
+        ],
+        [
+            {
+                "lane": 5,
+                "laneType": 3,
+                "measure": 11,
+                "noteType": 1,
+                "tick": 0,
+                "width": 3,
+                "channel": 48
+            },
+            {
+                "lane": 8,
+                "laneType": 3,
+                "measure": 11,
+                "noteType": 3,
+                "tick": 96,
+                "width": 3,
+                "channel": 48
+            },
+            {
+                "lane": 5,
+                "laneType": 3,
+                "measure": 11,
+                "noteType": 2,
+                "tick": 192,
+                "width": 3,
+                "channel": 48
+            }
+        ],
+        [
+            {
+                "lane": 8,
+                "laneType": 3,
+                "measure": 11,
+                "noteType": 1,
+                "tick": 0,
+                "width": 3,
+                "channel": 49
+            },
+            {
+                "lane": 11,
+                "laneType": 3,
+                "measure": 11,
+                "noteType": 3,
+                "tick": 96,
+                "width": 3,
+                "channel": 49
+            },
+            {
+                "lane": 8,
+                "laneType": 3,
+                "measure": 11,
+                "noteType": 2,
+                "tick": 192,
+                "width": 3,
+                "channel": 49
+            }
+        ],
+        [
+            {
+                "lane": 8,
+                "laneType": 3,
+                "measure": 11,
+                "noteType": 1,
+                "tick": 384,
+                "width": 3,
+                "channel": 49
+            },
+            {
+                "lane": 5,
+                "laneType": 3,
+                "measure": 11,
+                "noteType": 3,
+                "tick": 480,
+                "width": 3,
+                "channel": 49
+            },
+            {
+                "lane": 8,
+                "laneType": 3,
+                "measure": 11,
+                "noteType": 3,
+                "tick": 576,
+                "width": 3,
+                "channel": 49
+            },
+            {
+                "lane": 11,
+                "laneType": 3,
+                "measure": 11,
+                "noteType": 5,
+                "tick": 672,
+                "width": 3,
+                "channel": 49
+            },
+            {
+                "lane": 8,
+                "laneType": 3,
+                "measure": 12,
+                "noteType": 2,
+                "tick": 0,
+                "width": 3,
+                "channel": 49
+            }
+        ],
+        [
+            {
+                "lane": 5,
+                "laneType": 3,
+                "measure": 11,
+                "noteType": 1,
+                "tick": 384,
+                "width": 3,
+                "channel": 48
+            },
+            {
+                "lane": 2,
+                "laneType": 3,
+                "measure": 11,
+                "noteType": 3,
+                "tick": 480,
+                "width": 3,
+                "channel": 48
+            },
+            {
+                "lane": 5,
+                "laneType": 3,
+                "measure": 11,
+                "noteType": 3,
+                "tick": 576,
+                "width": 3,
+                "channel": 48
+            },
+            {
+                "lane": 2,
+                "laneType": 3,
+                "measure": 11,
+                "noteType": 5,
+                "tick": 672,
+                "width": 3,
+                "channel": 48
+            },
+            {
+                "lane": 5,
+                "laneType": 3,
+                "measure": 12,
+                "noteType": 2,
+                "tick": 0,
+                "width": 3,
+                "channel": 48
+            }
+        ],
+        [
+            {
+                "lane": 8,
+                "laneType": 3,
+                "measure": 12,
+                "noteType": 1,
+                "tick": 672,
+                "width": 3,
+                "channel": 48
+            },
+            {
+                "lane": 11,
+                "laneType": 3,
+                "measure": 13,
+                "noteType": 3,
+                "tick": 0,
+                "width": 3,
+                "channel": 48
+            },
+            {
+                "lane": 8,
+                "laneType": 3,
+                "measure": 13,
+                "noteType": 2,
+                "tick": 96,
+                "width": 3,
+                "channel": 48
+            }
+        ],
+        [
+            {
+                "lane": 2,
+                "laneType": 3,
+                "measure": 13,
+                "noteType": 1,
+                "tick": 384,
+                "width": 4,
+                "channel": 48
+            },
+            {
+                "lane": 2,
+                "laneType": 3,
+                "measure": 13,
+                "noteType": 2,
+                "tick": 480,
+                "width": 4,
+                "channel": 48
+            }
+        ],
+        [
+            {
+                "lane": 8,
+                "laneType": 3,
+                "measure": 13,
+                "noteType": 1,
+                "tick": 384,
+                "width": 2,
+                "channel": 49
+            },
+            {
+                "lane": 8,
+                "laneType": 3,
+                "measure": 13,
+                "noteType": 2,
+                "tick": 480,
+                "width": 2,
+                "channel": 49
+            }
+        ],
+        [
+            {
+                "lane": 10,
+                "laneType": 3,
+                "measure": 13,
+                "noteType": 1,
+                "tick": 576,
+                "width": 4,
+                "channel": 49
+            },
+            {
+                "lane": 8,
+                "laneType": 3,
+                "measure": 14,
+                "noteType": 2,
+                "tick": 0,
+                "width": 4,
+                "channel": 49
+            }
+        ],
+        [
+            {
+                "lane": 2,
+                "laneType": 3,
+                "measure": 13,
+                "noteType": 1,
+                "tick": 576,
+                "width": 2,
+                "channel": 48
+            },
+            {
+                "lane": 6,
+                "laneType": 3,
+                "measure": 14,
+                "noteType": 2,
+                "tick": 0,
+                "width": 2,
+                "channel": 48
+            }
+        ],
+        [
+            {
+                "lane": 5,
+                "laneType": 3,
+                "measure": 14,
+                "noteType": 1,
+                "tick": 672,
+                "width": 3,
+                "channel": 48
+            },
+            {
+                "lane": 2,
+                "laneType": 3,
+                "measure": 15,
+                "noteType": 3,
+                "tick": 0,
+                "width": 3,
+                "channel": 48
+            },
+            {
+                "lane": 5,
+                "laneType": 3,
+                "measure": 15,
+                "noteType": 2,
+                "tick": 96,
+                "width": 3,
+                "channel": 48
+            }
+        ],
+        [
+            {
+                "lane": 10,
+                "laneType": 3,
+                "measure": 15,
+                "noteType": 1,
+                "tick": 384,
+                "width": 4,
+                "channel": 48
+            },
+            {
+                "lane": 10,
+                "laneType": 3,
+                "measure": 15,
+                "noteType": 2,
+                "tick": 480,
+                "width": 4,
+                "channel": 48
+            }
+        ],
+        [
+            {
+                "lane": 6,
+                "laneType": 3,
+                "measure": 15,
+                "noteType": 1,
+                "tick": 384,
+                "width": 2,
+                "channel": 49
+            },
+            {
+                "lane": 6,
+                "laneType": 3,
+                "measure": 15,
+                "noteType": 2,
+                "tick": 480,
+                "width": 2,
+                "channel": 49
+            }
+        ],
+        [
+            {
+                "lane": 2,
+                "laneType": 3,
+                "measure": 15,
+                "noteType": 1,
+                "tick": 576,
+                "width": 4,
+                "channel": 49
+            },
+            {
+                "lane": 4,
+                "laneType": 3,
+                "measure": 16,
+                "noteType": 2,
+                "tick": 0,
+                "width": 4,
+                "channel": 49
+            }
+        ],
+        [
+            {
+                "lane": 12,
+                "laneType": 3,
+                "measure": 15,
+                "noteType": 1,
+                "tick": 576,
+                "width": 2,
+                "channel": 48
+            },
+            {
+                "lane": 8,
+                "laneType": 3,
+                "measure": 16,
+                "noteType": 2,
+                "tick": 0,
+                "width": 2,
+                "channel": 48
+            }
+        ],
+        [
+            {
+                "lane": 5,
+                "laneType": 3,
+                "measure": 16,
+                "noteType": 1,
+                "tick": 672,
+                "width": 3,
+                "channel": 48
+            },
+            {
+                "lane": 2,
+                "laneType": 3,
+                "measure": 17,
+                "noteType": 3,
+                "tick": 0,
+                "width": 3,
+                "channel": 48
+            },
+            {
+                "lane": 5,
+                "laneType": 3,
+                "measure": 17,
+                "noteType": 2,
+                "tick": 96,
+                "width": 3,
+                "channel": 48
+            }
+        ],
+        [
+            {
+                "lane": 2,
+                "laneType": 3,
+                "measure": 18,
+                "noteType": 1,
+                "tick": 0,
+                "width": 4,
+                "channel": 48
+            },
+            {
+                "lane": 2,
+                "laneType": 3,
+                "measure": 18,
+                "noteType": 2,
+                "tick": 96,
+                "width": 4,
+                "channel": 48
+            }
+        ],
+        [
+            {
+                "lane": 12,
+                "laneType": 3,
+                "measure": 18,
+                "noteType": 1,
+                "tick": 0,
+                "width": 2,
+                "channel": 49
+            },
+            {
+                "lane": 12,
+                "laneType": 3,
+                "measure": 18,
+                "noteType": 2,
+                "tick": 192,
+                "width": 2,
+                "channel": 49
+            }
+        ],
+        [
+            {
+                "lane": 4,
+                "laneType": 3,
+                "measure": 18,
+                "noteType": 1,
+                "tick": 192,
+                "width": 2,
+                "channel": 48
+            },
+            {
+                "lane": 6,
+                "laneType": 3,
+                "measure": 18,
+                "noteType": 2,
+                "tick": 288,
+                "width": 2,
+                "channel": 48
+            }
+        ],
+        [
+            {
+                "lane": 8,
+                "laneType": 3,
+                "measure": 18,
+                "noteType": 1,
+                "tick": 288,
+                "width": 2,
+                "channel": 49
+            },
+            {
+                "lane": 10,
+                "laneType": 3,
+                "measure": 18,
+                "noteType": 2,
+                "tick": 384,
+                "width": 2,
+                "channel": 49
+            }
+        ],
+        [
+            {
+                "lane": 2,
+                "laneType": 3,
+                "measure": 18,
+                "noteType": 1,
+                "tick": 384,
+                "width": 2,
+                "channel": 48
+            },
+            {
+                "lane": 6,
+                "laneType": 3,
+                "measure": 18,
+                "noteType": 2,
+                "tick": 480,
+                "width": 2,
+                "channel": 48
+            }
+        ],
+        [
+            {
+                "lane": 8,
+                "laneType": 3,
+                "measure": 18,
+                "noteType": 1,
+                "tick": 480,
+                "width": 2,
+                "channel": 49
+            },
+            {
+                "lane": 12,
+                "laneType": 3,
+                "measure": 18,
+                "noteType": 2,
+                "tick": 576,
+                "width": 2,
+                "channel": 49
+            }
+        ],
+        [
+            {
+                "lane": 6,
+                "laneType": 3,
+                "measure": 18,
+                "noteType": 1,
+                "tick": 672,
+                "width": 3,
+                "channel": 49
+            },
+            {
+                "lane": 2,
+                "laneType": 3,
+                "measure": 19,
+                "noteType": 3,
+                "tick": 96,
+                "width": 3,
+                "channel": 49
+            },
+            {
+                "lane": 6,
+                "laneType": 3,
+                "measure": 19,
+                "noteType": 3,
+                "tick": 192,
+                "width": 3,
+                "channel": 49
+            },
+            {
+                "lane": 2,
+                "laneType": 3,
+                "measure": 19,
+                "noteType": 2,
+                "tick": 384,
+                "width": 3,
+                "channel": 49
+            }
+        ],
+        [
+            {
+                "lane": 11,
+                "laneType": 3,
+                "measure": 18,
+                "noteType": 1,
+                "tick": 672,
+                "width": 3,
+                "channel": 48
+            },
+            {
+                "lane": 7,
+                "laneType": 3,
+                "measure": 19,
+                "noteType": 3,
+                "tick": 96,
+                "width": 3,
+                "channel": 48
+            },
+            {
+                "lane": 11,
+                "laneType": 3,
+                "measure": 19,
+                "noteType": 3,
+                "tick": 192,
+                "width": 3,
+                "channel": 48
+            },
+            {
+                "lane": 7,
+                "laneType": 3,
+                "measure": 19,
+                "noteType": 2,
+                "tick": 384,
+                "width": 3,
+                "channel": 48
+            }
+        ],
+        [
+            {
+                "lane": 7,
+                "laneType": 3,
+                "measure": 20,
+                "noteType": 1,
+                "tick": 672,
+                "width": 3,
+                "channel": 48
+            },
+            {
+                "lane": 11,
+                "laneType": 3,
+                "measure": 21,
+                "noteType": 2,
+                "tick": 192,
+                "width": 3,
+                "channel": 48
+            }
+        ],
+        [
+            {
+                "lane": 2,
+                "laneType": 3,
+                "measure": 21,
+                "noteType": 1,
+                "tick": 384,
+                "width": 2,
+                "channel": 48
+            },
+            {
+                "lane": 2,
+                "laneType": 3,
+                "measure": 21,
+                "noteType": 2,
+                "tick": 480,
+                "width": 2,
+                "channel": 48
+            }
+        ],
+        [
+            {
+                "lane": 5,
+                "laneType": 3,
+                "measure": 21,
+                "noteType": 1,
+                "tick": 384,
+                "width": 4,
+                "channel": 49
+            },
+            {
+                "lane": 5,
+                "laneType": 3,
+                "measure": 21,
+                "noteType": 2,
+                "tick": 480,
+                "width": 4,
+                "channel": 49
+            }
+        ],
+        [
+            {
+                "lane": 2,
+                "laneType": 3,
+                "measure": 21,
+                "noteType": 1,
+                "tick": 576,
+                "width": 4,
+                "channel": 49
+            },
+            {
+                "lane": 4,
+                "laneType": 3,
+                "measure": 22,
+                "noteType": 2,
+                "tick": 0,
+                "width": 4,
+                "channel": 49
+            }
+        ],
+        [
+            {
+                "lane": 12,
+                "laneType": 3,
+                "measure": 21,
+                "noteType": 1,
+                "tick": 576,
+                "width": 2,
+                "channel": 48
+            },
+            {
+                "lane": 8,
+                "laneType": 3,
+                "measure": 22,
+                "noteType": 2,
+                "tick": 0,
+                "width": 2,
+                "channel": 48
+            }
+        ],
+        [
+            {
+                "lane": 6,
+                "laneType": 3,
+                "measure": 22,
+                "noteType": 1,
+                "tick": 672,
+                "width": 3,
+                "channel": 48
+            },
+            {
+                "lane": 2,
+                "laneType": 3,
+                "measure": 23,
+                "noteType": 2,
+                "tick": 192,
+                "width": 3,
+                "channel": 48
+            }
+        ],
+        [
+            {
+                "lane": 12,
+                "laneType": 3,
+                "measure": 23,
+                "noteType": 1,
+                "tick": 384,
+                "width": 2,
+                "channel": 48
+            },
+            {
+                "lane": 12,
+                "laneType": 3,
+                "measure": 23,
+                "noteType": 2,
+                "tick": 480,
+                "width": 2,
+                "channel": 48
+            }
+        ],
+        [
+            {
+                "lane": 7,
+                "laneType": 3,
+                "measure": 23,
+                "noteType": 1,
+                "tick": 384,
+                "width": 4,
+                "channel": 49
+            },
+            {
+                "lane": 7,
+                "laneType": 3,
+                "measure": 23,
+                "noteType": 2,
+                "tick": 480,
+                "width": 4,
+                "channel": 49
+            }
+        ],
+        [
+            {
+                "lane": 8,
+                "laneType": 3,
+                "measure": 23,
+                "noteType": 1,
+                "tick": 576,
+                "width": 2,
+                "channel": 49
+            },
+            {
+                "lane": 12,
+                "laneType": 3,
+                "measure": 23,
+                "noteType": 3,
+                "tick": 672,
+                "width": 2,
+                "channel": 49
+            },
+            {
+                "lane": 8,
+                "laneType": 3,
+                "measure": 24,
+                "noteType": 2,
+                "tick": 0,
+                "width": 2,
+                "channel": 49
+            }
+        ],
+        [
+            {
+                "lane": 5,
+                "laneType": 3,
+                "measure": 23,
+                "noteType": 1,
+                "tick": 576,
+                "width": 3,
+                "channel": 48
+            },
+            {
+                "lane": 2,
+                "laneType": 3,
+                "measure": 24,
+                "noteType": 2,
+                "tick": 0,
+                "width": 3,
+                "channel": 48
+            }
+        ],
+        [
+            {
+                "lane": 8,
+                "laneType": 3,
+                "measure": 24,
+                "noteType": 1,
+                "tick": 672,
+                "width": 3,
+                "channel": 48
+            },
+            {
+                "lane": 11,
+                "laneType": 3,
+                "measure": 25,
+                "noteType": 3,
+                "tick": 0,
+                "width": 3,
+                "channel": 48
+            },
+            {
+                "lane": 8,
+                "laneType": 3,
+                "measure": 25,
+                "noteType": 2,
+                "tick": 96,
+                "width": 3,
+                "channel": 48
+            }
+        ],
+        [
+            {
+                "lane": 10,
+                "laneType": 3,
+                "measure": 26,
+                "noteType": 1,
+                "tick": 0,
+                "width": 4,
+                "channel": 48
+            },
+            {
+                "lane": 10,
+                "laneType": 3,
+                "measure": 26,
+                "noteType": 2,
+                "tick": 96,
+                "width": 4,
+                "channel": 48
+            }
+        ],
+        [
+            {
+                "lane": 2,
+                "laneType": 3,
+                "measure": 26,
+                "noteType": 1,
+                "tick": 0,
+                "width": 2,
+                "channel": 49
+            },
+            {
+                "lane": 2,
+                "laneType": 3,
+                "measure": 26,
+                "noteType": 2,
+                "tick": 192,
+                "width": 2,
+                "channel": 49
+            }
+        ],
+        [
+            {
+                "lane": 10,
+                "laneType": 3,
+                "measure": 26,
+                "noteType": 1,
+                "tick": 192,
+                "width": 2,
+                "channel": 48
+            },
+            {
+                "lane": 8,
+                "laneType": 3,
+                "measure": 26,
+                "noteType": 2,
+                "tick": 288,
+                "width": 2,
+                "channel": 48
+            }
+        ],
+        [
+            {
+                "lane": 6,
+                "laneType": 3,
+                "measure": 26,
+                "noteType": 1,
+                "tick": 288,
+                "width": 2,
+                "channel": 49
+            },
+            {
+                "lane": 4,
+                "laneType": 3,
+                "measure": 26,
+                "noteType": 2,
+                "tick": 384,
+                "width": 2,
+                "channel": 49
+            }
+        ],
+        [
+            {
+                "lane": 12,
+                "laneType": 3,
+                "measure": 26,
+                "noteType": 1,
+                "tick": 384,
+                "width": 2,
+                "channel": 48
+            },
+            {
+                "lane": 8,
+                "laneType": 3,
+                "measure": 26,
+                "noteType": 2,
+                "tick": 480,
+                "width": 2,
+                "channel": 48
+            }
+        ],
+        [
+            {
+                "lane": 6,
+                "laneType": 3,
+                "measure": 26,
+                "noteType": 1,
+                "tick": 480,
+                "width": 2,
+                "channel": 49
+            },
+            {
+                "lane": 2,
+                "laneType": 3,
+                "measure": 26,
+                "noteType": 2,
+                "tick": 576,
+                "width": 2,
+                "channel": 49
+            }
+        ],
+        [
+            {
+                "lane": 2,
+                "laneType": 3,
+                "measure": 26,
+                "noteType": 1,
+                "tick": 672,
+                "width": 6,
+                "channel": 49
+            },
+            {
+                "lane": 6,
+                "laneType": 3,
+                "measure": 27,
+                "noteType": 5,
+                "tick": 0,
+                "width": 2,
+                "channel": 49
+            },
+            {
+                "lane": 2,
+                "laneType": 3,
+                "measure": 27,
+                "noteType": 2,
+                "tick": 96,
+                "width": 6,
+                "channel": 49
+            }
+        ],
+        [
+            {
+                "lane": 8,
+                "laneType": 3,
+                "measure": 26,
+                "noteType": 1,
+                "tick": 672,
+                "width": 6,
+                "channel": 48
+            },
+            {
+                "lane": 8,
+                "laneType": 3,
+                "measure": 27,
+                "noteType": 5,
+                "tick": 0,
+                "width": 2,
+                "channel": 48
+            },
+            {
+                "lane": 8,
+                "laneType": 3,
+                "measure": 27,
+                "noteType": 2,
+                "tick": 96,
+                "width": 6,
+                "channel": 48
+            }
+        ],
+        [
+            {
+                "lane": 6,
+                "laneType": 3,
+                "measure": 27,
+                "noteType": 1,
+                "tick": 192,
+                "width": 2,
+                "channel": 48
+            },
+            {
+                "lane": 2,
+                "laneType": 3,
+                "measure": 27,
+                "noteType": 2,
+                "tick": 384,
+                "width": 6,
+                "channel": 48
+            }
+        ],
+        [
+            {
+                "lane": 8,
+                "laneType": 3,
+                "measure": 27,
+                "noteType": 1,
+                "tick": 192,
+                "width": 2,
+                "channel": 49
+            },
+            {
+                "lane": 8,
+                "laneType": 3,
+                "measure": 27,
+                "noteType": 2,
+                "tick": 384,
+                "width": 6,
+                "channel": 49
+            }
+        ],
+        [
+            {
+                "lane": 4,
+                "laneType": 3,
+                "measure": 27,
+                "noteType": 1,
+                "tick": 576,
+                "width": 8,
+                "channel": 49
+            },
+            {
+                "lane": 4,
+                "laneType": 3,
+                "measure": 28,
+                "noteType": 2,
+                "tick": 0,
+                "width": 8,
+                "channel": 49
+            }
+        ],
+        [
+            {
+                "lane": 6,
+                "laneType": 3,
+                "measure": 29,
+                "noteType": 1,
+                "tick": 384,
+                "width": 4,
+                "channel": 49
+            },
+            {
+                "lane": 10,
+                "laneType": 3,
+                "measure": 29,
+                "noteType": 3,
+                "tick": 480,
+                "width": 4,
+                "channel": 49
+            },
+            {
+                "lane": 10,
+                "laneType": 3,
+                "measure": 29,
+                "noteType": 2,
+                "tick": 576,
+                "width": 4,
+                "channel": 49
+            }
+        ],
+        [
+            {
+                "lane": 10,
+                "laneType": 3,
+                "measure": 31,
+                "noteType": 1,
+                "tick": 384,
+                "width": 4,
+                "channel": 49
+            },
+            {
+                "lane": 6,
+                "laneType": 3,
+                "measure": 31,
+                "noteType": 3,
+                "tick": 480,
+                "width": 4,
+                "channel": 49
+            },
+            {
+                "lane": 6,
+                "laneType": 3,
+                "measure": 31,
+                "noteType": 2,
+                "tick": 576,
+                "width": 4,
+                "channel": 49
+            }
+        ],
+        [
+            {
+                "lane": 6,
+                "laneType": 3,
+                "measure": 33,
+                "noteType": 1,
+                "tick": 384,
+                "width": 4,
+                "channel": 49
+            },
+            {
+                "lane": 2,
+                "laneType": 3,
+                "measure": 33,
+                "noteType": 3,
+                "tick": 480,
+                "width": 4,
+                "channel": 49
+            },
+            {
+                "lane": 2,
+                "laneType": 3,
+                "measure": 33,
+                "noteType": 2,
+                "tick": 576,
+                "width": 4,
+                "channel": 49
+            }
+        ],
+        [
+            {
+                "lane": 8,
+                "laneType": 3,
+                "measure": 34,
+                "noteType": 1,
+                "tick": 0,
+                "width": 6,
+                "channel": 49
+            },
+            {
+                "lane": 12,
+                "laneType": 3,
+                "measure": 34,
+                "noteType": 5,
+                "tick": 96,
+                "width": 2,
+                "channel": 49
+            },
+            {
+                "lane": 8,
+                "laneType": 3,
+                "measure": 34,
+                "noteType": 3,
+                "tick": 192,
+                "width": 6,
+                "channel": 49
+            },
+            {
+                "lane": 8,
+                "laneType": 3,
+                "measure": 34,
+                "noteType": 5,
+                "tick": 288,
+                "width": 2,
+                "channel": 49
+            },
+            {
+                "lane": 8,
+                "laneType": 3,
+                "measure": 34,
+                "noteType": 3,
+                "tick": 384,
+                "width": 6,
+                "channel": 49
+            },
+            {
+                "lane": 12,
+                "laneType": 3,
+                "measure": 34,
+                "noteType": 5,
+                "tick": 480,
+                "width": 2,
+                "channel": 49
+            },
+            {
+                "lane": 8,
+                "laneType": 3,
+                "measure": 34,
+                "noteType": 2,
+                "tick": 576,
+                "width": 6,
+                "channel": 49
+            }
+        ],
+        [
+            {
+                "lane": 2,
+                "laneType": 3,
+                "measure": 34,
+                "noteType": 1,
+                "tick": 0,
+                "width": 6,
+                "channel": 48
+            },
+            {
+                "lane": 2,
+                "laneType": 3,
+                "measure": 34,
+                "noteType": 5,
+                "tick": 96,
+                "width": 2,
+                "channel": 48
+            },
+            {
+                "lane": 2,
+                "laneType": 3,
+                "measure": 34,
+                "noteType": 3,
+                "tick": 192,
+                "width": 6,
+                "channel": 48
+            },
+            {
+                "lane": 6,
+                "laneType": 3,
+                "measure": 34,
+                "noteType": 5,
+                "tick": 288,
+                "width": 2,
+                "channel": 48
+            },
+            {
+                "lane": 2,
+                "laneType": 3,
+                "measure": 34,
+                "noteType": 3,
+                "tick": 384,
+                "width": 6,
+                "channel": 48
+            },
+            {
+                "lane": 2,
+                "laneType": 3,
+                "measure": 34,
+                "noteType": 5,
+                "tick": 480,
+                "width": 2,
+                "channel": 48
+            },
+            {
+                "lane": 2,
+                "laneType": 3,
+                "measure": 34,
+                "noteType": 2,
+                "tick": 576,
+                "width": 6,
+                "channel": 48
+            }
+        ],
+        [
+            {
+                "lane": 6,
+                "laneType": 3,
+                "measure": 36,
+                "noteType": 1,
+                "tick": 576,
+                "width": 2,
+                "channel": 48
+            },
+            {
+                "lane": 2,
+                "laneType": 3,
+                "measure": 37,
+                "noteType": 2,
+                "tick": 0,
+                "width": 4,
+                "channel": 48
+            }
+        ],
+        [
+            {
+                "lane": 8,
+                "laneType": 3,
+                "measure": 36,
+                "noteType": 1,
+                "tick": 576,
+                "width": 2,
+                "channel": 49
+            },
+            {
+                "lane": 10,
+                "laneType": 3,
+                "measure": 37,
+                "noteType": 2,
+                "tick": 0,
+                "width": 4,
+                "channel": 49
+            }
+        ],
+        [
+            {
+                "lane": 6,
+                "laneType": 3,
+                "measure": 38,
+                "noteType": 1,
+                "tick": 576,
+                "width": 2,
+                "channel": 49
+            },
+            {
+                "lane": 2,
+                "laneType": 3,
+                "measure": 39,
+                "noteType": 2,
+                "tick": 0,
+                "width": 6,
+                "channel": 49
+            }
+        ],
+        [
+            {
+                "lane": 8,
+                "laneType": 3,
+                "measure": 38,
+                "noteType": 1,
+                "tick": 576,
+                "width": 2,
+                "channel": 48
+            },
+            {
+                "lane": 8,
+                "laneType": 3,
+                "measure": 39,
+                "noteType": 2,
+                "tick": 0,
+                "width": 6,
+                "channel": 48
+            }
+        ]
+    ]
+}
