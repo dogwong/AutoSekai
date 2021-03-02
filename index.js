@@ -50,10 +50,13 @@ const player = new ScorePlayer()
   // });
 
   process.stdin.on('keypress', function(s, key) {
-    // console.log(key);
+    console.log(key);
     if (key.name == "return" && !player.isPlaying) {
       player.Play(playCallback)
       console.log("Play!")
+    } else if (key.sequence == "'" && !player.isPlaying) {
+      player.PlayAtFirstNote(playCallback)
+      console.log("PlayAtFirstNote!")
     } else if (key.name == "down") {
       player.Shift(-5)
       console.log(`shift -5  => ${player.timeshift}`);
@@ -63,8 +66,118 @@ const player = new ScorePlayer()
     } else if (key.name == "s" && player.isPlaying) {
       player.Stop(playCallback)
       console.log("Stop!")
+    } else if (key.sequence == "[") {
+      // 2000, 980
+      let touch = {
+        x: Math.round((1080 - 980) / 1080 * 10000),
+        y: Math.round(2000 / 2340 * 10000),
+        t: 50
+      }
+      let i = 0
+      function loopTouch () {
+        sendTouch([touch])
+        i += 1
+        if (i < 26)
+          setTimeout(loopTouch, 100)
+      }
+      loopTouch()
+    } else if (key.sequence == "]") {
+      let touch = {
+        x: Math.round((1080 - 1000) / 1080 * 10000),
+        y: Math.round(1650 / 2340 * 10000),
+        t: 50
+      }
+      sendTouch([touch])
+    } else if (key.sequence == "p") {
+      console.log("Start Song!");
+      clickTillNextSong();
+    } else if (key.sequence == "o") {
+      console.log("Start Song! (Loop)");
+      clickTillNextSong(true);
     }
   });
+
+  async function clickTillNextSong (loop = false) {
+    sendTouch([{
+      t: 50,
+      x: Math.round((1080 - 1000) / 1080 * 10000),
+      y: Math.round(2000 / 2340 * 10000),
+    }]) // click start
+    console.log("Click Start!");
+    await sleep(10000);
+    // for (let i = 0; i < 60; i++) {
+    //   sendTouch([{
+    //     t: 30,
+    //     x: Math.round((100 - 1000) / 1080 * 10000),
+    //     y: Math.round(2250 / 2340 * 10000),
+    //   }]) // click pause
+    //   await sleep(50)
+    // }
+    let i = 0;
+    console.log("Loop click pause!");
+    async function loopTouch () {
+      sendTouch([{
+        t: 30,
+        x: Math.round((1080 - 100) / 1080 * 10000),
+        y: Math.round(2250 / 2340 * 10000),
+      }]);
+      i += 1;
+      if (i < 80)
+        setTimeout(loopTouch, 50);
+      else {
+        await sleep(100);
+        console.log("Click resume!");
+        sendTouch([{
+          t: 50,
+          x: Math.round((1080 - 680) / 1080 * 10000),
+          y: Math.round(1550 / 2340 * 10000),
+        }]); // click resume
+        await sleep(6060); // get from screen record
+        player.Play(playCallback).then(async () => {
+          if (loop) {
+            console.log("Loop! wait end screen");
+            await sleep(11000)
+            
+            // click end screen next
+            // 2000, 980
+            let touch = {
+              x: Math.round((1080 - 980) / 1080 * 10000),
+              y: Math.round(2000 / 2340 * 10000),
+              t: 50
+            }
+            let i = 0
+            function loopTouch () {
+              sendTouch([touch])
+              i += 1
+              if (i < 26)
+                setTimeout(loopTouch, 100)
+            }
+            loopTouch()
+            await sleep(2600)
+            // ------------- click song selection screen
+            await sleep(1000)
+            sendTouch([{
+              x: Math.round((1080 - 1000) / 1080 * 10000),
+              y: Math.round(1650 / 2340 * 10000),
+              t: 50
+            }])
+            await sleep(500)
+            // click select song
+            sendTouch([{
+              x: Math.round((1080 - 980) / 1080 * 10000),
+              y: Math.round(2000 / 2340 * 10000),
+              t: 50
+            }])
+            await sleep(500)
+            // loop
+            clickTillNextSong(true);
+          }
+        });
+        console.log("Play!");
+      }
+    }
+    loopTouch();
+  }
 
 
   if (os.platform() == "linux") {
@@ -72,10 +185,17 @@ const player = new ScorePlayer()
     await bleTouch.init();
   }
 
-  // const sus = fs.readFileSync('music_score/0074_easy.sus', 'utf8')
-  const sus = fs.readFileSync('music_score/0074_normal.sus', 'utf8')
+  // const sus = fs.readFileSync('music_score/0047_normal.sus', 'utf8') // melt
+  // const sus = fs.readFileSync('music_score/0047_hard.sus', 'utf8') // melt
+  // const sus = fs.readFileSync('music_score/0047_expert.sus', 'utf8') // melt
+
+  // const sus = fs.readFileSync('music_score/0074_easy.sus', 'utf8') // envy
+  // const sus = fs.readFileSync('music_score/0074_normal.sus', 'utf8')
+  const sus = fs.readFileSync('music_score/0074_hard.sus', 'utf8')
+  // const sus = fs.readFileSync('music_score/0074_expert.sus', 'utf8')
   // const sus = fs.readFileSync('music_score/0074_master.sus', 'utf8')
-  // const sus = fs.readFileSync('music_score/0083_master.sus', 'utf8')
+
+  // const sus = fs.readFileSync('music_score/0083_master.sus', 'utf8') // Gimme X Gimme
 
   const susValidate = SusAnalyzer.validate(sus)
   const susMeta = SusAnalyzer.getMeta(sus)
@@ -88,17 +208,21 @@ const player = new ScorePlayer()
   
   // const Sus2Image = require('./sus-2-image/dist/index')
   // Sus2Image.getPNG(sus).then(image => {
-  //   fs.writeFileSync(`score_0083_normal.png` , image)
+  //   fs.writeFileSync(`score_0074_expert.png` , image)
   // })
 
+  let processedSus = readSusFile(sus)
+  let susMsNotes = processedSus.timestampNotes
+  let susMsSlides = processedSus.slides
 
-  let noteObj = susNotesToTimestamp(sus)
-  console.log(noteObj)
-  global.noteObj = noteObj
 
-  noteObj.forEach(x => {
+  console.log("susMsNotes", susMsNotes)
+  console.log("susSlides", susMsSlides)
+  global.noteObj = susMsNotes
+
+  susMsNotes.forEach(x => {
     if (x.type.indexOf("flick") >= 0) {
-      player.Add(x.t - 20, x)
+      player.Add(x.t - 25, x)
     } else {
       player.Add(x.t, x)
     }
@@ -109,9 +233,9 @@ const player = new ScorePlayer()
 
   console.log("score", player.score)
 
-  if (os.platform() != "linux") {
-    player.Play(playCallback)
-  }
+  // if (os.platform() != "linux") {
+  //   player.Play(playCallback)
+  // }
 
   // landscape position
   let laneXPositions = [
@@ -136,7 +260,9 @@ const player = new ScorePlayer()
 
   async function playCallback (payload) {
     // console.log(1);
-    // console.log(payload.t, payload.objects);
+    console.log(payload.t, payload.objects.map(x => {
+      return `${x.type} ${x.lane}`
+    }));
 
     let touch_i = 0;
     payload.objects.forEach(note => {
@@ -151,17 +277,12 @@ const player = new ScorePlayer()
           t: 10
         }])
 
-        // touch.moveFingerTo(this_touch_i, screenXPositions, Math.round((laneXPositions[note.lane - 2] + laneXPositions[note.lane + note.width - 2 - 1]) / 2)).then(async () => {
-        //   await sleep(30)
-        //   touch.releaseFinger(this_touch_i)
-        // });
-
         touch_i += 1
       } else if (note.type.indexOf("flick") >= 0) {
         /// console.log(`flick lane ${note.lane}`)
 
         let touchesToSend = []
-        for (let j = 0; j < 6; j++) {
+        for (let j = 0; j < 7; j++) {
           touchesToSend.push({
             x: screenXPositions + 200 * j,
             y: Math.round((laneXPositions[note.lane - 2] + laneXPositions[note.lane + note.width - 2 - 1]) / 2),
@@ -169,38 +290,59 @@ const player = new ScorePlayer()
           })
         }
         sendTouch(touchesToSend)
-        
-        // touch.moveFingerTo(this_touch_i + 2, screenXPositions, Math.round((laneXPositions[note.lane - 2] + laneXPositions[note.lane + note.width - 2 - 1]) / 2)).then(async () => {
-        //   await sleep(10)
-        //   for (let j = 0; j < 4; j++) {
-        //     touch.moveFingerTo(this_touch_i + 2, screenXPositions + 200 * j, Math.round((laneXPositions[note.lane - 2] + laneXPositions[note.lane + note.width - 2 - 1]) / 2))
-
-        //     await sleep(10)
-        //   };
-        //   touch.releaseFinger(this_touch_i + 2)
-        // })
 
         touch_i += 1
       } else if (note.type == "slide head") {
-        /// console.log(`flick lane ${note.lane}`)
+        console.log(`slide lane ${note.lane}`)
+
+        let slide = susMsSlides[note.slideId]
+        // remove nocombo node first
+        // for (let i = slide.length - 1; i >= 0; i--) {
+        //   const node = slide[i];
+        //   if (node.type.indexOf("nocombo") >= 0) {
+        //     slide.splice(i, 1)
+        //   }
+        // }
 
         let touchesToSend = []
+        // loop through each node on the slide
+        for (let i = 0; i < slide.length - 1; i++) {
+          const node = slide[i]
+          const nextNode = slide[i + 1]
 
-        sendTouch([{
-          x: screenXPositions, 
-          y: Math.round((laneXPositions[note.lane - 2] + laneXPositions[note.lane + note.width - 2 - 1]) / 2),
-          t: 10
-        }])
+          const intervalToNextNode = nextNode.t - node.t
+          const nodeXPositions = (laneXPositions[node.lane - 2] + laneXPositions[node.lane + node.width - 2 - 1]) / 2
+          const xDiffToNextNode = (laneXPositions[nextNode.lane - 2] + laneXPositions[nextNode.lane + nextNode.width - 2 - 1]) / 2 - 
+          (laneXPositions[node.lane - 2] + laneXPositions[node.lane + node.width - 2 - 1]) / 2;
 
-        for (let j = 0; j < 6; j++) {
-          touchesToSend.push({
-            x: screenXPositions + 200 * j,
-            y: Math.round((laneXPositions[note.lane - 2] + laneXPositions[note.lane + note.width - 2 - 1]) / 2),
-            t: 8
-          })
+          // TODO: separate this to multi point, calculate position by %
+          for (let j = 0; j < intervalToNextNode; j += 50) {
+            let intervalTime = (j + 50 < intervalToNextNode) ? 50 : intervalToNextNode - j
+            let pathPercentage = j / intervalToNextNode
+            
+            touchesToSend.push({
+              x: screenXPositions,
+              y: Math.round(nodeXPositions + xDiffToNextNode * pathPercentage),
+              t: intervalTime
+            })
+          }
+          // console.log("1")
         }
+        // append slide tail
+        let lastNode = slide[slide.length - 1]
+        touchesToSend.push({
+          x: screenXPositions + 200,
+          y: (laneXPositions[lastNode.lane - 2] + laneXPositions[lastNode.lane + lastNode.width - 2 - 1]) / 2,
+          t: 10
+        })
+        touchesToSend.push({
+          x: screenXPositions + 400,
+          y: (laneXPositions[lastNode.lane - 2] + laneXPositions[lastNode.lane + lastNode.width - 2 - 1]) / 2,
+          t: 10
+        })
+
         sendTouch(touchesToSend)
-        
+
         touch_i += 1
       }
     })
@@ -295,7 +437,7 @@ function processTouchQueue () {
 // shortNotes[0] = {"lane":5,"laneType":1,"measure":0,"noteType":1,"tick":144,"width":3}
 // shortNotes[1] = {"lane":5,"laneType":1,"measure":0,"noteType":1,"tick":384,"width":2}
 
-function susNotesToTimestamp (sus) {
+function readSusFile (sus) {
     
   const data = SusAnalyzer.getScore(sus, 480)
   //    number[]
@@ -354,9 +496,11 @@ function susNotesToTimestamp (sus) {
   })
 
   let prevSlideId = 1
+  let slides = []
 
   data.slideNotes.forEach(notes => {
     let type = "unknown"
+    slides[prevSlideId] = []
     for (let i = 0; i < notes.length; i++) {
       const note = notes[i];
       if (i == 0 && note.noteType == 1) {
@@ -369,7 +513,7 @@ function susNotesToTimestamp (sus) {
         type = "slide waypoint nocombo"
       }
 
-      result.push({
+      let resultObject = {
         t: Math.floor(absMs[note.measure] + note.tick / 480 * 60 / data.BPMs[note.measure] * 1000 * (data.BPMs[0] / data.BPMs[note.measure])),
         // ...note,
         type: type,
@@ -379,19 +523,25 @@ function susNotesToTimestamp (sus) {
         width: note.width,
         r: "slide",
         slideId: prevSlideId,
-      })
+      }
+      slides[prevSlideId].push(resultObject)
+      result.push(resultObject)
     }
+    slides[prevSlideId].sort((a, b) => {
+      return a.t - b.t
+    })
+
     prevSlideId += 1
   })
 
   data.airNotes.forEach(note => {
     let type = "unknown"
     if (note.noteType == 5) { // air down (left)
-      type = "slide bend_head"
+      type = "slide bend head"
     } else if (note.noteType == 6) { // air down (right)
-      type = "slide bend_head"
+      type = "slide bend head"
     } else if (note.noteType == 2) { // air down (middle)
-      type = "slide bend_middle"
+      type = "slide bend middle"
     } else if (note.noteType == 1) { // air up (middle)
       type = "flick"
     } else if (note.noteType == 4) { // air up (right)
@@ -419,7 +569,10 @@ function susNotesToTimestamp (sus) {
     return a.t - b.t
   })
 
-  return result
+  return {
+    timestampNotes: result,
+    slides: slides,
+  }
 }
 
 
