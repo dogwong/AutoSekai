@@ -88,6 +88,57 @@ const player = new ScorePlayer()
         t: 50
       }
       sendTouch([touch])
+    } else if (key.sequence == "t") {
+      sendTouch([{
+        x: Math.round((1080 - 850) / 1080 * 10000),
+        y: Math.round(1000 / 2340 * 10000),
+        t: 2000
+      }])
+      sendTouch([{
+        x: Math.round((1080 - 850) / 1080 * 10000),
+        y: Math.round(1340 / 2340 * 10000),
+        t: 2000
+      }])
+    } else if (key.sequence == "y") {
+      sendTouch([{
+        x: Math.round((1080 - 850) / 1080 * 10000),
+        y: Math.round(1000 / 2340 * 10000),
+        t: 200
+      }, {
+        x: Math.round((1080 - 830) / 1080 * 10000),
+        y: Math.round(1000 / 2340 * 10000),
+        t: 200
+      }, {
+        x: Math.round((1080 - 810) / 1080 * 10000),
+        y: Math.round(1000 / 2340 * 10000),
+        t: 200
+      }, {
+        x: Math.round((1080 - 790) / 1080 * 10000),
+        y: Math.round(1000 / 2340 * 10000),
+        t: 200
+      }, {
+        x: Math.round((1080 - 770) / 1080 * 10000),
+        y: Math.round(1000 / 2340 * 10000),
+        t: 200
+      }, {
+        x: Math.round((1080 - 750) / 1080 * 10000),
+        y: Math.round(1000 / 2340 * 10000),
+        t: 200
+      }, {
+        x: Math.round((1080 - 730) / 1080 * 10000),
+        y: Math.round(1000 / 2340 * 10000),
+        t: 200
+      }, {
+        x: Math.round((1080 - 710) / 1080 * 10000),
+        y: Math.round(1000 / 2340 * 10000),
+        t: 200
+      }])
+      await sleep(100)
+      sendTouch([{
+        x: Math.round((1080 - 850) / 1080 * 10000),
+        y: Math.round(1340 / 2340 * 10000),
+        t: 2000
+      }])
     } else if (key.sequence == "p") {
       console.log("Start Song!");
       clickTillNextSong();
