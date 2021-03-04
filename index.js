@@ -49,7 +49,7 @@ const player = new ScorePlayer()
   //   rl.prompt();
   // });
 
-  process.stdin.on('keypress', function(s, key) {
+  process.stdin.on('keypress', async function(s, key) {
     console.log(key);
     if (key.name == "return" && !player.isPlaying) {
       player.Play(playCallback)
@@ -155,7 +155,7 @@ const player = new ScorePlayer()
       y: Math.round(2000 / 2340 * 10000),
     }]) // click start
     console.log("Click Start!");
-    await sleep(10000);
+    await sleep(8000);
     // for (let i = 0; i < 60; i++) {
     //   sendTouch([{
     //     t: 30,
@@ -168,13 +168,13 @@ const player = new ScorePlayer()
     console.log("Loop click pause!");
     async function loopTouch () {
       sendTouch([{
-        t: 30,
+        t: 1,
         x: Math.round((1080 - 100) / 1080 * 10000),
         y: Math.round(2250 / 2340 * 10000),
       }]);
       i += 1;
-      if (i < 80)
-        setTimeout(loopTouch, 50);
+      if (i < 200)
+        setTimeout(loopTouch, 20);
       else {
         await sleep(100);
         console.log("Click resume!");
@@ -183,7 +183,7 @@ const player = new ScorePlayer()
           x: Math.round((1080 - 680) / 1080 * 10000),
           y: Math.round(1550 / 2340 * 10000),
         }]); // click resume
-        await sleep(6060); // get from screen record
+        await sleep(6025); // get from screen record
         player.Play(playCallback).then(async () => {
           if (loop) {
             console.log("Loop! wait end screen");
@@ -196,15 +196,19 @@ const player = new ScorePlayer()
               y: Math.round(2000 / 2340 * 10000),
               t: 50
             }
-            let i = 0
-            function loopTouch () {
+            // let i = 0
+            // function loopTouch () {
+            //   sendTouch([touch])
+            //   i += 1
+            //   if (i < 26)
+            //     setTimeout(loopTouch, 100)
+            // }
+            // loopTouch()
+            for (let i = 0; i < 26; i++) {
               sendTouch([touch])
-              i += 1
-              if (i < 26)
-                setTimeout(loopTouch, 100)
+              await sleep(100)
             }
-            loopTouch()
-            await sleep(2600)
+            // await sleep(2600)
             // ------------- click song selection screen
             await sleep(1000)
             sendTouch([{
@@ -284,9 +288,9 @@ const player = new ScorePlayer()
 
   console.log("score", player.score)
 
-  // if (os.platform() != "linux") {
-  //   player.Play(playCallback)
-  // }
+  if (os.platform() != "linux") {
+    player.Play(playCallback)
+  }
 
   // landscape position
   let laneXPositions = [
@@ -414,6 +418,8 @@ let touchQueue = []
 function sendTouch (touch) {
   // array of touch object: x, y, t
   // console.log(`sendTouch len = ${touch.length}`);
+  touch.x = Math.round(touch.x + Math.random() * 5 - 2)
+  touch.y = Math.round(touch.y + Math.random() * 5 - 2)
   touchQueue.push(touch)
   // setTimeout(() => {
     processTouchQueue()
@@ -423,14 +429,16 @@ function sendTouch (touch) {
 function processTouchQueue () {
   if (touchQueue.length > 0) {
     let freeSlot = touching[0] ? (touching[1] ? -1 : 1) : 0 //touching.indexOf(false)
-    // console.log(`freeSlot = ${touching}`);
+    // console.log(`freeSlot = ${freeSlot} - ${touching}`);
     if (freeSlot >= 0) {
       let actions = touchQueue.shift()
       touching[freeSlot] = actions
       
+
       processTouch(touching[freeSlot])
       async function processTouch (actions) {
         touch.moveFingerTo(freeSlot, actions[0].x, actions[0].y)
+        // console.log("process touch " + freeSlot);
         await sleep(actions[0].t)
         actions.shift() // put shift at last to make sure moveFingerTo is executed first
         if (actions.length > 0) {
@@ -513,7 +521,7 @@ function readSusFile (sus) {
     }
   }
   // console.log("absMeasure", absMeasure);
-  console.log("absMs", absMs);
+  // console.log("absMs", absMs);
 
   let result = []
 
