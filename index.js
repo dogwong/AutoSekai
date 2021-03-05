@@ -326,11 +326,18 @@ const player = new ScorePlayer()
       if (note.type.indexOf("tap") >= 0) {
         /// console.log(`tap lane ${note.lane}`)
 
-        sendTouch([{
-          x: screenXPositions, 
-          y: Math.round((laneXPositions[note.lane - 2] + laneXPositions[note.lane + note.width - 2 - 1]) / 2),
-          t: 10
-        }])
+        // ignore touch if a waypoint exist on same lane
+        let waypoints = payload.objects.filter(x => (
+          x.lane == note.lane && x.type.indexOf("waypoint") >= 0
+        ))
+
+        if (waypoints.length === 0) {
+          sendTouch([{
+            x: screenXPositions, 
+            y: Math.round((laneXPositions[note.lane - 2] + laneXPositions[note.lane + note.width - 2 - 1]) / 2),
+            t: 10
+          }])
+        }
 
         touch_i += 1
       } else if (note.type.indexOf("flick") >= 0) {
@@ -371,8 +378,9 @@ const player = new ScorePlayer()
           (laneXPositions[node.lane - 2] + laneXPositions[node.lane + node.width - 2 - 1]) / 2;
 
           // TODO: separate this to multi point, calculate position by %
-          for (let j = 0; j < intervalToNextNode; j += 50) {
-            let intervalTime = (j + 50 < intervalToNextNode) ? 50 : intervalToNextNode - j
+          const msInterval = 40
+          for (let j = 0; j < intervalToNextNode; j += msInterval) {
+            let intervalTime = (j + msInterval < intervalToNextNode) ? msInterval : intervalToNextNode - j
             let pathPercentage = j / intervalToNextNode
             
             touchesToSend.push({
@@ -385,16 +393,16 @@ const player = new ScorePlayer()
         }
         // append slide tail
         let lastNode = slide[slide.length - 1]
-        touchesToSend.push({
-          x: screenXPositions + 200,
-          y: (laneXPositions[lastNode.lane - 2] + laneXPositions[lastNode.lane + lastNode.width - 2 - 1]) / 2,
-          t: 10
-        })
-        touchesToSend.push({
-          x: screenXPositions + 400,
-          y: (laneXPositions[lastNode.lane - 2] + laneXPositions[lastNode.lane + lastNode.width - 2 - 1]) / 2,
-          t: 10
-        })
+        // check if tail note is a flick
+        if (lastNode.airNote && lastNode.airNote.type.indexOf("flick") >= 0) {
+          for (let j = 0; j < 3; j++) {
+            touchesToSend.push({
+              x: screenXPositions + 200 * j,
+              y: Math.round((laneXPositions[lastNode.lane - 2] + laneXPositions[lastNode.lane + lastNode.width - 2 - 1]) / 2),
+              t: 8
+            })
+          }
+        }
 
         sendTouch(touchesToSend)
 
@@ -525,6 +533,9 @@ function readSusFile (sus) {
 
   let result = []
 
+  // use to remove overlaping tap + flick or tap + slide head
+  let shortNotesMap = {}
+
   data.shortNotes.forEach(note => {
     let type = "unknown"
     if (note.lane == 0 && note.noteType == 4) {
@@ -540,7 +551,8 @@ function readSusFile (sus) {
     } else if (note.lane >= 2 && note.lane <= 13 && note.noteType == 3) {
       type = "diamond" // combo point on slide, will not affect slide path
     }
-    result.push({
+    
+    let resultObject = {
       t: Math.floor(absMs[note.measure] + note.tick / 480 * 60 / data.BPMs[note.measure] * 1000 * (data.BPMs[0] / data.BPMs[note.measure])),
       // (absMeasure[note.measure] +
         //       note.tick * (susData.BPMs[0] / susData.BPMs[note.measure]))
@@ -551,7 +563,53 @@ function readSusFile (sus) {
       measure: note.measure,
       width: note.width,
       r: "short", // raw type
-    })
+    }
+
+    shortNotesMap[`${resultObject.measure}_${resultObject.raw.tick}_${resultObject.lane}`] = resultObject
+    // will push to result after filtering out slide only
+  })
+
+  // use to map airNote to slideNote
+  let airNotesMap = {}
+
+  data.airNotes.forEach(note => {
+    let type = "unknown"
+    if (note.noteType == 5) { // air down (left)
+      type = "slide bend head"
+    } else if (note.noteType == 6) { // air down (right)
+      type = "slide bend head"
+    } else if (note.noteType == 2) { // air down (middle)
+      type = "slide bend middle"
+    } else if (note.noteType == 1) { // air up (middle)
+      type = "flick"
+    } else if (note.noteType == 4) { // air up (right)
+      type = "flick right"
+    } else if (note.noteType == 3) { // air up (left)
+      type = "flick left"
+    }
+
+    // for remove overlapping taps
+    let shortNote = shortNotesMap[`${note.measure}_${note.tick}_${note.lane}`]
+    if (shortNote) {
+      console.log("remove shortNote", shortNote);
+      delete shortNotesMap[`${note.measure}_${note.tick}_${note.lane}`]
+    } else {
+      shortNote = false
+    }
+
+    let resultObject = {
+      t: Math.floor(absMs[note.measure] + note.tick / 480 * 60 / data.BPMs[note.measure] * 1000 * (data.BPMs[0] / data.BPMs[note.measure])),
+      // ...note,
+      type: type,
+      lane: note.lane,
+      raw: note,
+      measure: note.measure,
+      width: note.width,
+      r: "air",
+    }
+
+    airNotesMap[`${resultObject.measure}_${resultObject.raw.tick}_${resultObject.lane}`] = resultObject
+    // will push to result after filtering out slide only
   })
 
   let prevSlideId = 1
@@ -572,6 +630,23 @@ function readSusFile (sus) {
         type = "slide waypoint nocombo"
       }
 
+      // for merge overlaying airNotes to slide
+      let airNote = airNotesMap[`${note.measure}_${note.tick}_${note.lane}`]
+      if (airNote) {
+        delete airNotesMap[`${note.measure}_${note.tick}_${note.lane}`]
+      } else {
+        airNote = false
+      }
+
+      // for remove overlapping taps
+      let shortNote = shortNotesMap[`${note.measure}_${note.tick}_${note.lane}`]
+      if (shortNote) {
+        console.log("remove shortNote", shortNote);
+        delete shortNotesMap[`${note.measure}_${note.tick}_${note.lane}`]
+      } else {
+        shortNote = false
+      }
+
       let resultObject = {
         t: Math.floor(absMs[note.measure] + note.tick / 480 * 60 / data.BPMs[note.measure] * 1000 * (data.BPMs[0] / data.BPMs[note.measure])),
         // ...note,
@@ -582,6 +657,7 @@ function readSusFile (sus) {
         width: note.width,
         r: "slide",
         slideId: prevSlideId,
+        airNote: airNote
       }
       slides[prevSlideId].push(resultObject)
       result.push(resultObject)
@@ -592,34 +668,25 @@ function readSusFile (sus) {
 
     prevSlideId += 1
   })
-
-  data.airNotes.forEach(note => {
-    let type = "unknown"
-    if (note.noteType == 5) { // air down (left)
-      type = "slide bend head"
-    } else if (note.noteType == 6) { // air down (right)
-      type = "slide bend head"
-    } else if (note.noteType == 2) { // air down (middle)
-      type = "slide bend middle"
-    } else if (note.noteType == 1) { // air up (middle)
-      type = "flick"
-    } else if (note.noteType == 4) { // air up (right)
-      type = "flick right"
-    } else if (note.noteType == 3) { // air up (left)
-      type = "flick left"
+  
+  // add remaining shortNotes to result
+  for (const key in shortNotesMap) {
+    if (Object.hasOwnProperty.call(shortNotesMap, key)) {
+      const note = shortNotesMap[key];
+      console.log("push shortNotes", note);
+      result.push(note)
     }
-
-    result.push({
-      t: Math.floor(absMs[note.measure] + note.tick / 480 * 60 / data.BPMs[note.measure] * 1000 * (data.BPMs[0] / data.BPMs[note.measure])),
-      // ...note,
-      type: type,
-      lane: note.lane,
-      raw: note,
-      measure: note.measure,
-      width: note.width,
-      r: "air",
-    })
-  })
+  }
+  
+  // add remaining airNotes to result
+  // console.log("lonely airNotes", airNotesMap);
+  for (const key in airNotesMap) {
+    if (Object.hasOwnProperty.call(airNotesMap, key)) {
+      const note = airNotesMap[key];
+      console.log("push airNote", note);
+      result.push(note)
+    }
+  }
   
 
   result = result.sort((a, b) => {
