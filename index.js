@@ -1,3 +1,4 @@
+// imports
 const os = require('os')
 const fs = require('fs')
 const SusAnalyzer = require('sus-analyzer')
@@ -14,6 +15,7 @@ let BleTouch;
 let bleTouch;
 const sleep = require('util').promisify(setTimeout)
 
+// init
 if (os.platform() == "linux") {
   console.log("linux! init bluetooth");
   
@@ -24,6 +26,9 @@ if (os.platform() == "linux") {
 }
 let touch = new Touch(bleTouch);
 
+// config
+const FLICK_EARLY = 20; // ms earlier to preform flick
+const SLIDE_UPDATE_FREQUENCY = 30; // ms touch update interval during slide
 
 // https://pjsek.ai/assets/startapp/music/music_score
 
@@ -240,17 +245,37 @@ const player = new ScorePlayer()
     await bleTouch.init();
   }
 
-  // const sus = fs.readFileSync('music_score/0047_normal.sus', 'utf8') // melt
-  // const sus = fs.readFileSync('music_score/0047_hard.sus', 'utf8') // melt
-  // const sus = fs.readFileSync('music_score/0047_expert.sus', 'utf8') // melt
+  // "fillerSec": 9
+  // const sus = fs.readFileSync('music_score/0047_normal.sus', 'utf8') // メルト
+  // const sus = fs.readFileSync('music_score/0047_hard.sus', 'utf8') // メルト
+  // const sus = fs.readFileSync('music_score/0047_expert.sus', 'utf8') // メルト
+  // const sus = fs.readFileSync('music_score/0047_01/expert.sus', 'utf8') // メルト
+  const sus = fs.readFileSync('music_score/0047_01/master.sus', 'utf8') // メルト
 
-  // const sus = fs.readFileSync('music_score/0074_easy.sus', 'utf8') // envy
+  // "fillerSec": 9
+  // const sus = fs.readFileSync('music_score/0074_easy.sus', 'utf8') // 独りんぼエンヴィー
   // const sus = fs.readFileSync('music_score/0074_normal.sus', 'utf8')
-  const sus = fs.readFileSync('music_score/0074_hard.sus', 'utf8')
+  // const sus = fs.readFileSync('music_score/0074_hard.sus', 'utf8')
   // const sus = fs.readFileSync('music_score/0074_expert.sus', 'utf8')
   // const sus = fs.readFileSync('music_score/0074_master.sus', 'utf8')
 
   // const sus = fs.readFileSync('music_score/0083_master.sus', 'utf8') // Gimme X Gimme
+
+  // "fillerSec": 9.324299812316895
+  // const sus = fs.readFileSync('music_score/0128_01/expert.sus', 'utf8') // Brand New Day
+  // const sus = fs.readFileSync('music_score/0128_01/master.sus', 'utf8') // Brand New Day
+
+  // "fillerSec": 9
+  // const sus = fs.readFileSync('music_score/0049_01/expert.sus', 'utf8') // 初音ミクの消失
+  // const sus = fs.readFileSync('music_score/0049_01/master.sus', 'utf8') // 初音ミクの消失
+
+  // const sus = fs.readFileSync('music_score/0028_01/expert.sus', 'utf8') // ドクター=ファンクビート
+  // const sus = fs.readFileSync('music_score/0028_01/master.sus', 'utf8') // ドクター=ファンクビート
+
+  // "fillerSec": 9
+  // const sus = fs.readFileSync('music_score/0006_01/expert.sus', 'utf8') // ヒバナ -Reloaded-
+  // const sus = fs.readFileSync('music_score/0006_01/master.sus', 'utf8') // ヒバナ -Reloaded-
+
 
   const susValidate = SusAnalyzer.validate(sus)
   const susMeta = SusAnalyzer.getMeta(sus)
@@ -277,7 +302,7 @@ const player = new ScorePlayer()
 
   susMsNotes.forEach(x => {
     if (x.type.indexOf("flick") >= 0) {
-      player.Add(x.t - 25, x)
+      player.Add(x.t - FLICK_EARLY, x)
     } else {
       player.Add(x.t, x)
     }
@@ -355,9 +380,9 @@ const player = new ScorePlayer()
 
         touch_i += 1
       } else if (note.type == "slide head") {
-        console.log(`slide lane ${note.lane}`)
+        // console.log(`slide lane ${note.lane}`)
 
-        let slide = susMsSlides[note.slideId]
+        let slideRaw = susMsSlides[note.slideId]
         // remove nocombo node first
         // for (let i = slide.length - 1; i >= 0; i--) {
         //   const node = slide[i];
@@ -368,6 +393,13 @@ const player = new ScorePlayer()
 
         let touchesToSend = []
         // loop through each node on the slide
+        // if diamond + waypoint hvcombo on same place, lane value will be ignored
+        // filter out them first
+        slide = slideRaw.filter(x => {
+          return !(x.type.indexOf("hvcombo") && x.diamondNote)
+        })
+        // console.log("slide filter", slide, slideRaw);
+
         for (let i = 0; i < slide.length - 1; i++) {
           const node = slide[i]
           const nextNode = slide[i + 1]
@@ -377,24 +409,44 @@ const player = new ScorePlayer()
           const xDiffToNextNode = (laneXPositions[nextNode.lane - 2] + laneXPositions[nextNode.lane + nextNode.width - 2 - 1]) / 2 - 
           (laneXPositions[node.lane - 2] + laneXPositions[node.lane + node.width - 2 - 1]) / 2;
 
-          // TODO: separate this to multi point, calculate position by %
-          const msInterval = 40
-          for (let j = 0; j < intervalToNextNode; j += msInterval) {
-            let intervalTime = (j + msInterval < intervalToNextNode) ? msInterval : intervalToNextNode - j
+          
+          for (let j = 0; j < intervalToNextNode; j += SLIDE_UPDATE_FREQUENCY) {
+            let intervalTime = (j + SLIDE_UPDATE_FREQUENCY < intervalToNextNode) ? SLIDE_UPDATE_FREQUENCY : intervalToNextNode - j
             let pathPercentage = j / intervalToNextNode
+
+            // calculate x position
+            let resultXPosition = nodeXPositions;
+            if (node.airNote && node.airNote.type.indexOf("bend") >= 0) {
+              if (node.airNote.type.indexOf("middle") >= 0) {
+                resultXPosition += xDiffToNextNode * (1 - Math.sin(pathPercentage * Math.PI * 0.5 + Math.PI * 0.5))
+                // console.log("1 - sin", resultXPosition)
+              } else {
+                resultXPosition += xDiffToNextNode * Math.sin(pathPercentage * Math.PI * 0.5)
+                // console.log("sin", resultXPosition)
+              }
+            } else {
+              resultXPosition += xDiffToNextNode * pathPercentage
+            }
             
             touchesToSend.push({
               x: screenXPositions,
-              y: Math.round(nodeXPositions + xDiffToNextNode * pathPercentage),
+              // y: Math.round(nodeXPositions + xDiffToNextNode * pathPercentage),
+              y: Math.round(resultXPosition),
               t: intervalTime
             })
           }
           // console.log("1")
         }
+
         // append slide tail
         let lastNode = slide[slide.length - 1]
         // check if tail note is a flick
         if (lastNode.airNote && lastNode.airNote.type.indexOf("flick") >= 0) {
+          // make the slide finish earlier for early flick
+          let lastNodeInterval = touchesToSend[touchesToSend.length - 1].t
+          
+          touchesToSend[touchesToSend.length - 1].t = lastNodeInterval > FLICK_EARLY + 10 ? lastNodeInterval - FLICK_EARLY : lastNodeInterval
+          
           for (let j = 0; j < 3; j++) {
             touchesToSend.push({
               x: screenXPositions + 200 * j,
@@ -505,6 +557,7 @@ function processTouchQueue () {
 // shortNotes[1] = {"lane":5,"laneType":1,"measure":0,"noteType":1,"tick":384,"width":2}
 
 function readSusFile (sus) {
+  // ref: https://github.com/PurplePalette/pjsekai-score-doc/wiki/%E4%BD%9C%E6%88%90%E6%96%B9%E6%B3%95
     
   const data = SusAnalyzer.getScore(sus, 480)
   //    number[]
@@ -550,6 +603,11 @@ function readSusFile (sus) {
       type = "yellow tap"
     } else if (note.lane >= 2 && note.lane <= 13 && note.noteType == 3) {
       type = "diamond" // combo point on slide, will not affect slide path
+      //  chunithm = flick note
+      // When the flick notes of Chunithm are placed on the relay point or invisible relay point of the slide, the shape of the slide at the placed relay point is ignored and the relay points before and after are interpolated and connected.
+      // In the case of an image, a relay point is placed on the refracting slide, and flick notes are placed on it.
+      // Therefore, refraction is ignored and it is linear.
+      // If flick notes are placed above an invisible relay point, the relay point will not be drawn.
     }
     
     let resultObject = {
@@ -575,9 +633,9 @@ function readSusFile (sus) {
   data.airNotes.forEach(note => {
     let type = "unknown"
     if (note.noteType == 5) { // air down (left)
-      type = "slide bend head"
+      type = "slide bend left"
     } else if (note.noteType == 6) { // air down (right)
-      type = "slide bend head"
+      type = "slide bend right"
     } else if (note.noteType == 2) { // air down (middle)
       type = "slide bend middle"
     } else if (note.noteType == 1) { // air up (middle)
@@ -591,7 +649,7 @@ function readSusFile (sus) {
     // for remove overlapping taps
     let shortNote = shortNotesMap[`${note.measure}_${note.tick}_${note.lane}`]
     if (shortNote) {
-      console.log("remove shortNote", shortNote);
+      // console.log("remove shortNote", shortNote, "overlapping airNote", note);
       delete shortNotesMap[`${note.measure}_${note.tick}_${note.lane}`]
     } else {
       shortNote = false
@@ -606,6 +664,7 @@ function readSusFile (sus) {
       measure: note.measure,
       width: note.width,
       r: "air",
+      shortNote: shortNote,
     }
 
     airNotesMap[`${resultObject.measure}_${resultObject.raw.tick}_${resultObject.lane}`] = resultObject
@@ -625,7 +684,7 @@ function readSusFile (sus) {
       } else if (i == notes.length - 1 && note.noteType == 2) {
         type = "slide tail"
       } else if (note.noteType == 3) {
-        type = "slide waypoint combo" // have diamond
+        type = "slide waypoint hvcombo" // have diamond
       } else if (note.noteType == 5) {
         type = "slide waypoint nocombo"
       }
@@ -638,11 +697,17 @@ function readSusFile (sus) {
         airNote = false
       }
 
-      // for remove overlapping taps
+      // check overlapping taps
+      // expected taps type: yellow tap, diamond
       let shortNote = shortNotesMap[`${note.measure}_${note.tick}_${note.lane}`]
+      let diamondNote = false;
       if (shortNote) {
-        console.log("remove shortNote", shortNote);
-        delete shortNotesMap[`${note.measure}_${note.tick}_${note.lane}`]
+        // console.log("remove shortNote", shortNote, "overlapping slideNote", note);
+        if (shortNote.type == "diamond") {
+          diamondNote = shortNote
+        } else {
+          delete shortNotesMap[`${note.measure}_${note.tick}_${note.lane}`]
+        }
       } else {
         shortNote = false
       }
@@ -657,7 +722,9 @@ function readSusFile (sus) {
         width: note.width,
         r: "slide",
         slideId: prevSlideId,
-        airNote: airNote
+        shortNote: shortNote,
+        airNote: airNote,
+        diamondNote: diamondNote,
       }
       slides[prevSlideId].push(resultObject)
       result.push(resultObject)
@@ -673,7 +740,7 @@ function readSusFile (sus) {
   for (const key in shortNotesMap) {
     if (Object.hasOwnProperty.call(shortNotesMap, key)) {
       const note = shortNotesMap[key];
-      console.log("push shortNotes", note);
+      // console.log("push shortNotes", note);
       result.push(note)
     }
   }
@@ -683,7 +750,7 @@ function readSusFile (sus) {
   for (const key in airNotesMap) {
     if (Object.hasOwnProperty.call(airNotesMap, key)) {
       const note = airNotesMap[key];
-      console.log("push airNote", note);
+      // console.log("push airNote", note);
       result.push(note)
     }
   }
