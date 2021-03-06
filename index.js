@@ -187,7 +187,7 @@ const player = new ScorePlayer()
         player.Play(playCallback).then(async () => {
           if (loop) {
             console.log("Loop! wait end screen");
-            await sleep(11000)
+            await sleep(10000)
             
             // click end screen next
             // 2000, 980
@@ -204,7 +204,7 @@ const player = new ScorePlayer()
             //     setTimeout(loopTouch, 100)
             // }
             // loopTouch()
-            for (let i = 0; i < 26; i++) {
+            for (let i = 0; i < 28; i++) {
               sendTouch([touch])
               await sleep(100)
             }
