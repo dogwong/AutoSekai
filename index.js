@@ -335,18 +335,11 @@ const player = new ScorePlayer()
   // = [2009, 2564, 3120, 3632, 4188, 4722, 5278, 5812, 6368, 6880, 7436, 7991]
 
   let laneYPosition = Math.round(850 / 1080 * 10000)
-  // let laneYPosition = Math.round(950 / 1080 * 10000)
   let screenXPositions = 10000 - laneYPosition
 
   async function playCallback (payload) {
-    // console.log(1);
-    console.log(payload.t, payload.objects.map(x => {
-      return `${x.type} ${x.lane}`
-    }));
-
-    let touch_i = 0;
+    
     payload.objects.forEach(note => {
-      let this_touch_i = touch_i;
       /// console.log(`forEach! type = ${note.type}`);
       if (note.type.indexOf("tap") >= 0) {
         /// console.log(`tap lane ${note.lane}`)
@@ -363,8 +356,6 @@ const player = new ScorePlayer()
             t: 10
           }])
         }
-
-        touch_i += 1
       } else if (note.type.indexOf("flick") >= 0) {
         /// console.log(`flick lane ${note.lane}`)
 
@@ -377,8 +368,6 @@ const player = new ScorePlayer()
           })
         }
         sendTouch(touchesToSend)
-
-        touch_i += 1
       } else if (note.type == "slide head") {
         // console.log(`slide lane ${note.lane}`)
 
@@ -435,7 +424,6 @@ const player = new ScorePlayer()
               t: intervalTime
             })
           }
-          // console.log("1")
         }
 
         // append slide tail
@@ -457,30 +445,34 @@ const player = new ScorePlayer()
         }
 
         sendTouch(touchesToSend)
-
-        touch_i += 1
       }
     })
     
-
-    // await touch.moveFingerTo(0, 5000, 5000)
-    // await touch.releaseFinger(0)
   }
 })();
-setInterval(() => {}, 1000);
+setInterval(() => {}, 1000); // keep this script running
+// @param {{x: Number, y: Number, t: Number}[]} touches - An array of touch objects
+// * @type {Object}
 
 let touching = [false, false]
 let touchQueue = []
 /**
  * 
- * @param {Array} touch 
+ * @typedef Touch
+ * @property {Number} x - x coordinate
+ * @property {Number} y - y coordinate
+ * @property {Number} t - milliseconds of touch down duration
+ * 
+ * @param {Touch[]} touches - An array of touch objects
+ * @description Perform a series of action with a single touch
  */
-function sendTouch (touch) {
+function sendTouch (touches) {
+  
   // array of touch object: x, y, t
   // console.log(`sendTouch len = ${touch.length}`);
-  touch.x = Math.round(touch.x + Math.random() * 5 - 2)
-  touch.y = Math.round(touch.y + Math.random() * 5 - 2)
-  touchQueue.push(touch)
+  touches.x = Math.round(touches.x + Math.random() * 5 - 2)
+  touches.y = Math.round(touches.y + Math.random() * 5 - 2)
+  touchQueue.push(touches)
   // setTimeout(() => {
     processTouchQueue()
   // }, 0)
@@ -513,48 +505,6 @@ function processTouchQueue () {
   }
 }
 
-
-  // console.log(susMeta.getNotes(955, ))
-
-  // sus2img code
-
-  // const height = absMeasure[absMeasure.length - 1] + 32
-
-  // //                SusAnalyzer.ISusNotes   
-  // const shortAbs = (note) => ({
-  //   absMeasure: absMeasure[note.measure],
-  //   absY:
-  //     height -
-  //     (absMeasure[note.measure] +
-  //       note.tick * (susData.BPMs[0] / susData.BPMs[note.measure])) -
-  //     8,
-  //   ...note,
-  //   tick: note.tick + 8
-  // })
-  // //               SusAnalyzer.ISusNotes[]
-  // const longAbs = (ln) =>
-  //   ln.map(note => ({
-  //     absMeasure: absMeasure[note.measure],
-  //     absY:
-  //       height -
-  //       (absMeasure[note.measure] +
-  //         note.tick * (susData.BPMs[0] / susData.BPMs[note.measure])) -
-  //       8,
-  //     ...note,
-  //     tick: note.tick + 8
-  // }))
-
-  // //    ISusNotesAbs[]
-  // const short = susData.shortNotes.map(shortAbs)
-  // console.log("short", short);
-
-
-// 0 1 (2 3 4 5) 5 6 7 8 (9 10 11 12) 13 14 15
-// slideNotes[0] = [{"lane":2,"laneType":3,"measure":0,"noteType":1,"tick": 0,"width":4,"channel":48},
-//                  {"lane":2,"laneType":3,"measure":0,"noteType":2,"tick":96,"width":4,"channel":48}]
-
-// shortNotes[0] = {"lane":5,"laneType":1,"measure":0,"noteType":1,"tick":144,"width":3}
-// shortNotes[1] = {"lane":5,"laneType":1,"measure":0,"noteType":1,"tick":384,"width":2}
 
 function readSusFile (sus) {
   // ref: https://github.com/PurplePalette/pjsekai-score-doc/wiki/%E4%BD%9C%E6%88%90%E6%96%B9%E6%B3%95
@@ -603,7 +553,7 @@ function readSusFile (sus) {
       type = "yellow tap"
     } else if (note.lane >= 2 && note.lane <= 13 && note.noteType == 3) {
       type = "diamond" // combo point on slide, will not affect slide path
-      //  chunithm = flick note
+      // chunithm = flick note
       // When the flick notes of Chunithm are placed on the relay point or invisible relay point of the slide, the shape of the slide at the placed relay point is ignored and the relay points before and after are interpolated and connected.
       // In the case of an image, a relay point is placed on the refracting slide, and flick notes are placed on it.
       // Therefore, refraction is ignored and it is linear.
@@ -612,9 +562,6 @@ function readSusFile (sus) {
     
     let resultObject = {
       t: Math.floor(absMs[note.measure] + note.tick / 480 * 60 / data.BPMs[note.measure] * 1000 * (data.BPMs[0] / data.BPMs[note.measure])),
-      // (absMeasure[note.measure] +
-        //       note.tick * (susData.BPMs[0] / susData.BPMs[note.measure]))
-      // ...note,
       type: type,
       lane: note.lane,
       raw: note,
@@ -657,7 +604,6 @@ function readSusFile (sus) {
 
     let resultObject = {
       t: Math.floor(absMs[note.measure] + note.tick / 480 * 60 / data.BPMs[note.measure] * 1000 * (data.BPMs[0] / data.BPMs[note.measure])),
-      // ...note,
       type: type,
       lane: note.lane,
       raw: note,
@@ -714,7 +660,6 @@ function readSusFile (sus) {
 
       let resultObject = {
         t: Math.floor(absMs[note.measure] + note.tick / 480 * 60 / data.BPMs[note.measure] * 1000 * (data.BPMs[0] / data.BPMs[note.measure])),
-        // ...note,
         type: type,
         lane: note.lane,
         raw: notes,
