@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch (js debug)",
+            "name": "Launch index (Integ Term)",
             "program": "${workspaceFolder}/index.js",
             "request": "launch",
             "skipFiles": [
@@ -17,7 +17,7 @@
         {
             "type": "pwa-node",
             "request": "launch",
-            "name": "Launch Program",
+            "name": "Launch index",
             "skipFiles": [
                 "<node_internals>/**"
             ],

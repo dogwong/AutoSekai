@@ -26,7 +26,7 @@ const SLIDE_UPDATE_FREQUENCY = 30; // ms touch update interval during slide
 
 (async () => {
   // init stuffs
-const player = new ScorePlayer()
+  const player = new ScorePlayer()
 
   // rl.on('line', (line) => {
   //   switch (line.trim()) {
@@ -269,7 +269,7 @@ const player = new ScorePlayer()
   const susValidate = SusAnalyzer.validate(sus)
   const susMeta = SusAnalyzer.getMeta(sus)
   const susData = SusAnalyzer.getScore(sus, 480)
-  global.susData = susData
+  global.susData = susData // for vscode debug console
 
   console.log(susValidate)
   console.log(susMeta)
@@ -408,7 +408,6 @@ const player = new ScorePlayer()
             
             touchesToSend.push({
               x: screenXPositions,
-              // y: Math.round(nodeXPositions + xDiffToNextNode * pathPercentage),
               y: Math.round(resultXPosition),
               t: intervalTime
             })
