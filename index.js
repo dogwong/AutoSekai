@@ -8,49 +8,82 @@ const SusAnalyzer = require('sus-analyzer')
 const SekaiSusReader = require('./lib/sekai-sus-reader')
 const Toucher = require('./lib/toucher')
 const ScorePlayer = require('./lib/score-player')
+
+// helper functions
+const sleep = require('util').promisify(setTimeout)
+const cin = function (query) {
+  return new Promise(resolve => rl.question(query, ans => {
+    resolve(ans)
+  }))
+};
+let onAutoComplete = function (line) {
+  // console.log(line);
+  let lowerLine = line.toLowerCase()
+  
+  if (line == "") {
+    return [Musics.map(music => (
+      `${music.title} (${music.titleEn}) [${music.id}]`
+    )), line]
+  }
+  
+  const hits = Musics.filter(music => {
+    return music.title.toLowerCase().indexOf(lowerLine) >= 0 || music.titleEn.toLowerCase().indexOf(lowerLine) >= 0
+  }).map(music => {
+    if (music.title.toLowerCase().indexOf(lowerLine) >= 0) {
+      // return `(${music.id}) ${music.title}`
+      return music.title
+    } else {
+      // return `(${music.id}) ${music.titleEn}`
+      return music.titleEn
+    }
+  })
+  return [hits, line]
+};
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
-  prompt: 'AutoPlay> '
+  prompt: 'AutoPlay> ',
+  completer: onAutoComplete
 });
-const sleep = require('util').promisify(setTimeout)
 
 
+// check environment
+const CLI_MODE = process.stdout.rows !== undefined
+console.log("CLI_MODE", CLI_MODE);
 
 
 // config
 const FLICK_EARLY = 20; // ms earlier to preform flick
 const SLIDE_UPDATE_FREQUENCY = 30; // ms touch update interval during slide
 
-// score files source: https://pjsek.ai/assets/startapp/music/music_score
+// load song list, source:
+// https://sekai-world.github.io/sekai-master-db-diff/musics.json
+// https://i18n-json.sekai.best/ja/music_titles.json
+// https://i18n-json.sekai.best/en/music_titles.json
+let Musics = require('./static_data_sekai/musics.json')
+const MusicEnNameMap = require('./static_data_sekai/music_titles_en.json')
+Musics = Musics.map(music => {
+  music.titleEn = MusicEnNameMap[music.id + ""]
+  return music
+});
+// console.log("Musics", Musics);
+
+
 
 (async () => {
   // init stuffs
   const player = new ScorePlayer()
-
-  // rl.on('line', (line) => {
-  //   switch (line.trim()) {
-  //     case 'hello':
-  //       readline.cursorTo(process.stdout, 0, 0)
-  //       console.log('world!');
-  //       break;
-  //     case '':
-  //       player.Play(playCallback)
-
-  //       console.log(`Enter`);
-  //       break;
-  //     default:
-  //       console.log(`Say what? I might have heard '${line.trim()}'`);
-  //       break;
-  //   }
-  //   rl.prompt();
-  // });
+  let songMeta = {}
+  let songId = 0
+  let songDifficulty = ""
+  let isLooping = false
+  let enableControl = false
 
   process.stdin.on('keypress', async function(s, key) {
-    console.log(key);
-    if (key.name == "return" && !player.isPlaying) {
-      player.Play(playCallback)
-      console.log("Play!")
+    // console.log(key);
+    if (!enableControl) return
+    if (key.name == "return") {
+      // onTerminalInput(key.name)
     } else if (key.sequence == "'" && !player.isPlaying) {
       player.PlayAtFirstNote(playCallback)
       console.log("PlayAtFirstNote!")
@@ -141,11 +174,87 @@ const SLIDE_UPDATE_FREQUENCY = 30; // ms touch update interval during slide
       clickTillNextSong();
     } else if (key.sequence == "o") {
       console.log("Start Song! (Loop)");
+      isLooping = true;
       clickTillNextSong(true);
+    } else if (key.sequence == "l") {
+      isLooping = !isLooping
+      console.log(`Set Looping = ${isLooping}`);
     }
   });
 
-  async function clickTillNextSong (loop = false) {
+  let input = "";
+  console.log("Enter song id or name, use tab to search")
+  do {
+    input = (await cin(">")).trim().toLowerCase();
+    
+    if (!isNaN(input)) { // numeric input, look for song id
+      // console.log("search id")
+      let searchResult = Musics.filter(music => (music.id == input))
+      if (searchResult.length == 1) {
+        songId = searchResult[0].id
+        songMeta = searchResult[0]
+      }
+    }
+    if (!songMeta.id) { // nothing found from song id
+      // console.log("search name")
+      const hits = Musics.filter(music => {
+        return music.title.toLowerCase().indexOf(input) >= 0 || music.titleEn.toLowerCase().indexOf(input) >= 0
+      })
+      
+      if (hits.length == 1) {
+        songId = hits[0].id
+        songMeta = hits[0]
+      } else if (hits.length > 1) {
+        console.log("Multiple results:")
+        hits.forEach(hit => {
+          console.log(`[${hit.id}] ${hit.title} (${hit.titleEn})`)
+        })
+      }
+    }
+    
+  } while (songId == 0)
+  
+  console.log("Song:", `[${songMeta.id}] ${songMeta.title} (${songMeta.titleEn})`)
+  
+  let shiftMs = 9000 - Math.round(songMeta.fillerSec * 1000);
+  // player.Shift(shiftMs)
+  console.log("fillerSec = " + songMeta.fillerSec, "shift = ", shiftMs)
+  console.log("");
+
+  input = ""
+  console.log("Enter difficulty: Easy / Normal / Hard / eXpert / Master")
+  do {
+    // easy, normal, hard, expert, master
+    input = (await cin(">")).trim().toLowerCase();
+    
+    if (input == "e") {
+      songDifficulty = "easy"
+    } else if (input == "n") {
+      songDifficulty = "normal"
+    } else if (input == "h") {
+      songDifficulty = "hard"
+    } else if (input == "x") {
+      songDifficulty = "expert"
+    } else if (input == "m") {
+      songDifficulty = "master"
+    } else {
+      input = ""
+    }
+  } while (input == "")
+  console.log("difficulty = " + songDifficulty);
+  console.log("");
+
+  let sus;
+  try {
+    sus = fs.readFileSync(`./music_score/${songId.toString().padStart(4, "0")}_01/${songDifficulty}.sus`, 'utf8')
+  } catch (err) {
+    console.log("error");
+  }
+  
+  enableControl = true
+
+
+  async function clickTillNextSong () {
     Toucher.SendTouch([{
       t: 50,
       x: Math.round((1080 - 1000) / 1080 * 10000),
@@ -181,10 +290,12 @@ const SLIDE_UPDATE_FREQUENCY = 30; // ms touch update interval during slide
           y: Math.round(1550 / 2340 * 10000),
         }]); // click resume
         await sleep(6025); // get from screen record
-        player.Play(playCallback).then(async () => {
-          if (loop) {
+        
+        let shiftMs = 9000 - Math.round(songMeta.fillerSec * 1000)
+        player.Play(playCallback, shiftMs).then(async () => {
+          if (isLooping) {
             console.log("Loop! wait end screen");
-            await sleep(10000)
+            await sleep(10800)
             
             // click end screen next
             // 2000, 980
@@ -222,7 +333,9 @@ const SLIDE_UPDATE_FREQUENCY = 30; // ms touch update interval during slide
             }])
             await sleep(500)
             // loop
-            clickTillNextSong(true);
+            if (isLooping) {
+              clickTillNextSong();
+            }
           }
         });
         console.log("Play!");
@@ -232,61 +345,29 @@ const SLIDE_UPDATE_FREQUENCY = 30; // ms touch update interval during slide
   }
 
 
-
-
-  // "fillerSec": 9
-  // const sus = fs.readFileSync('music_score/0047_normal.sus', 'utf8') // メルト
-  // const sus = fs.readFileSync('music_score/0047_hard.sus', 'utf8') // メルト
-  // const sus = fs.readFileSync('music_score/0047_expert.sus', 'utf8') // メルト
-  // const sus = fs.readFileSync('music_score/0047_01/expert.sus', 'utf8') // メルト
-  const sus = fs.readFileSync('music_score/0047_01/master.sus', 'utf8') // メルト
-
-  // "fillerSec": 9
-  // const sus = fs.readFileSync('music_score/0074_easy.sus', 'utf8') // 独りんぼエンヴィー
-  // const sus = fs.readFileSync('music_score/0074_normal.sus', 'utf8')
-  // const sus = fs.readFileSync('music_score/0074_hard.sus', 'utf8')
-  // const sus = fs.readFileSync('music_score/0074_expert.sus', 'utf8')
-  // const sus = fs.readFileSync('music_score/0074_master.sus', 'utf8')
-
-  // const sus = fs.readFileSync('music_score/0083_master.sus', 'utf8') // Gimme X Gimme
-
-  // "fillerSec": 9.324299812316895
-  // const sus = fs.readFileSync('music_score/0128_01/expert.sus', 'utf8') // Brand New Day
-  // const sus = fs.readFileSync('music_score/0128_01/master.sus', 'utf8') // Brand New Day
-
-  // "fillerSec": 9
-  // const sus = fs.readFileSync('music_score/0049_01/expert.sus', 'utf8') // 初音ミクの消失
-  // const sus = fs.readFileSync('music_score/0049_01/master.sus', 'utf8') // 初音ミクの消失
-
-  // const sus = fs.readFileSync('music_score/0028_01/expert.sus', 'utf8') // ドクター=ファンクビート
-  // const sus = fs.readFileSync('music_score/0028_01/master.sus', 'utf8') // ドクター=ファンクビート
-
-  // "fillerSec": 9
-  // const sus = fs.readFileSync('music_score/0006_01/expert.sus', 'utf8') // ヒバナ -Reloaded-
-  // const sus = fs.readFileSync('music_score/0006_01/master.sus', 'utf8') // ヒバナ -Reloaded-
-
-
   const susValidate = SusAnalyzer.validate(sus)
   const susMeta = SusAnalyzer.getMeta(sus)
   const susData = SusAnalyzer.getScore(sus, 480)
   global.susData = susData // for vscode debug console
 
-  console.log(susValidate)
-  console.log(susMeta)
-  console.log(susData)
+  // console.log(susValidate)
+  // console.log(susMeta)
+  // console.log(susData)
   
   // const Sus2Image = require('./sus-2-image/dist/index')
   // Sus2Image.getPNG(sus).then(image => {
-  //   fs.writeFileSync(`score_0074_expert.png` , image)
+  //   fs.writeFileSync(`score_0128_master.png` , image)
   // })
 
   let processedSus = SekaiSusReader.Read(sus)
   let susMsNotes = processedSus.timestampNotes
   let susMsSlides = processedSus.slides
 
+  console.log(`${songMeta.title}\n${songDifficulty} with ${processedSus.timestampNotes.length} notes loaded`);
 
-  console.log("susMsNotes", susMsNotes)
-  console.log("susSlides", susMsSlides)
+
+  // console.log("susMsNotes", susMsNotes)
+  // console.log("susSlides", susMsSlides)
   global.noteObj = susMsNotes
 
   susMsNotes.forEach(x => {
@@ -298,13 +379,28 @@ const SLIDE_UPDATE_FREQUENCY = 30; // ms touch update interval during slide
   })
   player.Sort()
 
+  // console.log("score", player.score)
   
-
-  console.log("score", player.score)
-
-  if (os.platform() != "linux") {
-    player.Play(playCallback)
+  // handle input from command line interface
+  let terminalBuffer = ""
+  function onTerminalInput (key) {
+    if (!isNaN(key)) {
+      terminalBuffer += "" + key
+    } else if (key == "return") {
+      console.log("Terminal input: ", terminalBuffer)
+      terminalBuffer = ""
+    } else {
+      console.log("Unhandled input: ", key)
+    }
   }
+
+
+
+
+  // auto start player if not linux
+  // if (os.platform() != "linux") {
+  //   player.Play(playCallback)
+  // }
 
   // landscape position
   let laneXPositions = [
@@ -445,5 +541,5 @@ setInterval(() => {}, 1000); // keep this script running
 
 
 
-console.log("Ready!");
-rl.prompt();
+// console.log("Ready!");
+// rl.prompt();
