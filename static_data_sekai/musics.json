@@ -1238,6 +1238,25 @@
     "fillerSec": 9
   },
   {
+    "id": 96,
+    "seq": 1205901,
+    "releaseConditionId": 5,
+    "categories": [
+      "image"
+    ],
+    "title": "from Y to Y",
+    "lyricist": "ジミーサムP",
+    "composer": "ジミーサムP",
+    "arranger": "ー",
+    "dancerCount": 1,
+    "selfDancerPosition": 0,
+    "assetbundleName": "jacket_s_096",
+    "liveTalkBackgroundAssetbundleName": "bg_livetalk_default_002",
+    "publishedAt": 1616392800000,
+    "liveStageId": 1,
+    "fillerSec": 9
+  },
+  {
     "id": 97,
     "seq": 2204401,
     "releaseConditionId": 10,
@@ -1352,6 +1371,25 @@
     "fillerSec": 9
   },
   {
+    "id": 106,
+    "seq": 1506201,
+    "releaseConditionId": 5,
+    "categories": [
+      "mv"
+    ],
+    "title": "お気に召すまま",
+    "lyricist": "Eve",
+    "composer": "Eve",
+    "arranger": "Numa",
+    "dancerCount": 1,
+    "selfDancerPosition": 0,
+    "assetbundleName": "jacket_s_106",
+    "liveTalkBackgroundAssetbundleName": "bg_livetalk_default_002",
+    "publishedAt": 1617602400000,
+    "liveStageId": 1,
+    "fillerSec": 9
+  },
+  {
     "id": 107,
     "seq": 1304901,
     "releaseConditionId": 5,
@@ -1424,6 +1462,25 @@
     "assetbundleName": "jacket_s_110",
     "liveTalkBackgroundAssetbundleName": "bg_livetalk_default_002",
     "publishedAt": 1609480800000,
+    "liveStageId": 1,
+    "fillerSec": 9
+  },
+  {
+    "id": 112,
+    "seq": 2306101,
+    "releaseConditionId": 10,
+    "categories": [
+      "mv"
+    ],
+    "title": "天使のクローバー",
+    "lyricist": "DIVELA",
+    "composer": "DIVELA",
+    "arranger": "DIVELA",
+    "dancerCount": 1,
+    "selfDancerPosition": 0,
+    "assetbundleName": "jacket_s_112",
+    "liveTalkBackgroundAssetbundleName": "bg_livetalk_default_002",
+    "publishedAt": 1617109500000,
     "liveStageId": 1,
     "fillerSec": 9
   },
@@ -1563,7 +1620,7 @@
   {
     "id": 124,
     "seq": 1105701,
-    "releaseConditionId": 6,
+    "releaseConditionId": 5,
     "categories": [
       "image"
     ],
@@ -1616,5 +1673,24 @@
     "publishedAt": 1613973600000,
     "liveStageId": 1,
     "fillerSec": 9.324299812316895
+  },
+  {
+    "id": 131,
+    "seq": 1106001,
+    "releaseConditionId": 5,
+    "categories": [
+      "image"
+    ],
+    "title": "初音ミクの激唱",
+    "lyricist": "GAiA",
+    "composer": "cosMo@暴走P",
+    "arranger": "cosMo@暴走P",
+    "dancerCount": 1,
+    "selfDancerPosition": 0,
+    "assetbundleName": "jacket_s_131",
+    "liveTalkBackgroundAssetbundleName": "bg_livetalk_default_002",
+    "publishedAt": 1617103800000,
+    "liveStageId": 1,
+    "fillerSec": 8.699999809265137
   }
 ]
