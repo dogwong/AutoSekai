@@ -9,9 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "sus-analyzer": "^2.2.4",
+    "axios": "^0.21.1",
     "dbus-next": "^0.9.1",
     "lodash": "^4.17.20",
-    "node-hid": "^2.1.1"
+    "node-hid": "^2.1.1",
+    "sus-analyzer": "^2.2.4"
   }
 }
