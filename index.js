@@ -279,10 +279,10 @@ Musics = Musics.map(music => {
         y: Math.round(2250 / 2340 * 10000),
       }]);
       i += 1;
-      if (i < 200)
+      if (i < 240)
         setTimeout(loopTouch, 20);
       else {
-        await sleep(100);
+        await sleep(500);
         console.log("Click resume!");
         Toucher.SendTouch([{
           t: 50,
