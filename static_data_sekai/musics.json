@@ -1248,7 +1248,7 @@
     "title": "from Y to Y",
     "lyricist": "ジミーサムP",
     "composer": "ジミーサムP",
-    "arranger": "ー",
+    "arranger": "-",
     "dancerCount": 1,
     "selfDancerPosition": 0,
     "assetbundleName": "jacket_s_096",
@@ -1300,7 +1300,7 @@
     "seq": 1404001,
     "releaseConditionId": 5,
     "categories": [
-      "image"
+      "mv_2d"
     ],
     "title": "ECHO",
     "lyricist": "Crusher P",
@@ -1638,6 +1638,44 @@
     "fillerSec": 9
   },
   {
+    "id": 120,
+    "seq": 1207201,
+    "releaseConditionId": 5,
+    "categories": [
+      "mv"
+    ],
+    "title": "いかないで",
+    "lyricist": "想太",
+    "composer": "想太",
+    "arranger": "-",
+    "dancerCount": 1,
+    "selfDancerPosition": 0,
+    "assetbundleName": "jacket_s_120",
+    "liveTalkBackgroundAssetbundleName": "bg_livetalk_default_002",
+    "publishedAt": 1622181600000,
+    "liveStageId": 1,
+    "fillerSec": 9
+  },
+  {
+    "id": 121,
+    "seq": 1307301,
+    "releaseConditionId": 5,
+    "categories": [
+      "mv"
+    ],
+    "title": "ロミオとシンデレラ",
+    "lyricist": "doriko",
+    "composer": "doriko",
+    "arranger": "doriko",
+    "dancerCount": 1,
+    "selfDancerPosition": 0,
+    "assetbundleName": "jacket_s_121",
+    "liveTalkBackgroundAssetbundleName": "bg_livetalk_default_002",
+    "publishedAt": 1623045600000,
+    "liveStageId": 1,
+    "fillerSec": 9
+  },
+  {
     "id": 122,
     "seq": 1505201,
     "releaseConditionId": 5,
@@ -1733,6 +1771,25 @@
     "fillerSec": 8.032299995422363
   },
   {
+    "id": 127,
+    "seq": 2507501,
+    "releaseConditionId": 10,
+    "categories": [
+      "mv"
+    ],
+    "title": "トンデモワンダーズ",
+    "lyricist": "sasakure.UK",
+    "composer": "sasakure.UK",
+    "arranger": "sasakure.UK（Key 岸田勇気（有形ランペイジ））",
+    "dancerCount": 1,
+    "selfDancerPosition": 0,
+    "assetbundleName": "jacket_s_127",
+    "liveTalkBackgroundAssetbundleName": "bg_livetalk_default_002",
+    "publishedAt": 1624107900000,
+    "liveStageId": 1,
+    "fillerSec": 9
+  },
+  {
     "id": 128,
     "seq": 1105301,
     "releaseConditionId": 5,
@@ -1750,6 +1807,25 @@
     "publishedAt": 1613973600000,
     "liveStageId": 1,
     "fillerSec": 9.324299812316895
+  },
+  {
+    "id": 130,
+    "seq": 2207801,
+    "releaseConditionId": 10,
+    "categories": [
+      "mv"
+    ],
+    "title": "フロムトーキョー",
+    "lyricist": "夏代孝明",
+    "composer": "夏代孝明・渡辺拓也",
+    "arranger": "渡辺拓也",
+    "dancerCount": 1,
+    "selfDancerPosition": 0,
+    "assetbundleName": "jacket_s_130",
+    "liveTalkBackgroundAssetbundleName": "bg_livetalk_default_002",
+    "publishedAt": 1625663100000,
+    "liveStageId": 1,
+    "fillerSec": 7.615900039672852
   },
   {
     "id": 131,
@@ -1809,6 +1885,25 @@
     "fillerSec": 9
   },
   {
+    "id": 138,
+    "seq": 1507001,
+    "releaseConditionId": 5,
+    "categories": [
+      "image"
+    ],
+    "title": "KING",
+    "lyricist": "Kanaria",
+    "composer": "Kanaria",
+    "arranger": "-",
+    "dancerCount": 1,
+    "selfDancerPosition": 0,
+    "assetbundleName": "jacket_s_138",
+    "liveTalkBackgroundAssetbundleName": "bg_livetalk_default_002",
+    "publishedAt": 1621231200000,
+    "liveStageId": 1,
+    "fillerSec": 9
+  },
+  {
     "id": 139,
     "seq": 1606701,
     "releaseConditionId": 5,
@@ -1826,5 +1921,81 @@
     "publishedAt": 1619866800000,
     "liveStageId": 1,
     "fillerSec": 9
+  },
+  {
+    "id": 143,
+    "seq": 1407701,
+    "releaseConditionId": 5,
+    "categories": [
+      "original"
+    ],
+    "title": "トラフィック・ジャム",
+    "lyricist": "煮ル果実",
+    "composer": "煮ル果実",
+    "arranger": "煮ル果実",
+    "dancerCount": 1,
+    "selfDancerPosition": 0,
+    "assetbundleName": "jacket_s_143",
+    "liveTalkBackgroundAssetbundleName": "bg_livetalk_default_002",
+    "publishedAt": 1625032800000,
+    "liveStageId": 1,
+    "fillerSec": 9
+  },
+  {
+    "id": 144,
+    "seq": 2307101,
+    "releaseConditionId": 10,
+    "categories": [
+      "mv_2d"
+    ],
+    "title": "アイノマテリアル",
+    "lyricist": "Junky",
+    "composer": "Junky",
+    "arranger": "Junky",
+    "dancerCount": 1,
+    "selfDancerPosition": 0,
+    "assetbundleName": "jacket_s_144",
+    "liveTalkBackgroundAssetbundleName": "bg_livetalk_default_002",
+    "publishedAt": 1621576800000,
+    "liveStageId": 1,
+    "fillerSec": 8.5
+  },
+  {
+    "id": 149,
+    "seq": 2607601,
+    "releaseConditionId": 10,
+    "categories": [
+      "mv_2d"
+    ],
+    "title": "カナデトモスソラ",
+    "lyricist": "Sasanomaly",
+    "composer": "Sasanomaly",
+    "arranger": "Sasanomaly",
+    "dancerCount": 1,
+    "selfDancerPosition": 0,
+    "assetbundleName": "jacket_s_149",
+    "liveTalkBackgroundAssetbundleName": "bg_livetalk_default_002",
+    "publishedAt": 1624255200000,
+    "liveStageId": 1,
+    "fillerSec": 9
+  },
+  {
+    "id": 151,
+    "seq": 1107401,
+    "releaseConditionId": 5,
+    "categories": [
+      "image"
+    ],
+    "title": "泡沫未来",
+    "lyricist": "加賀（ネギシャワーＰ）",
+    "composer": "加賀（ネギシャワーＰ）",
+    "arranger": "加賀（ネギシャワーＰ）",
+    "dancerCount": 1,
+    "selfDancerPosition": 0,
+    "assetbundleName": "jacket_s_151",
+    "liveTalkBackgroundAssetbundleName": "bg_livetalk_default_002",
+    "publishedAt": 1623650400000,
+    "liveStageId": 1,
+    "fillerSec": 9.335000038146973
   }
 ]
