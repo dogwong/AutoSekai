@@ -78,6 +78,7 @@ Musics = Musics.map(music => {
   let songDifficulty = ""
   let isLooping = false
   let enableControl = false
+  let eventMode = true
 
   process.stdin.on('keypress', async function(s, key) {
     // console.log(key);
@@ -175,7 +176,7 @@ Musics = Musics.map(music => {
     } else if (key.sequence == "o") {
       console.log("Start Song! (Loop)");
       isLooping = true;
-      clickTillNextSong(true);
+      clickTillNextSong();
     } else if (key.sequence == "l") {
       isLooping = !isLooping
       console.log(`Set Looping = ${isLooping}`);
@@ -262,14 +263,7 @@ Musics = Musics.map(music => {
     }]) // click start
     console.log("Click Start!");
     await sleep(8000);
-    // for (let i = 0; i < 60; i++) {
-    //   Toucher.SendTouch([{
-    //     t: 30,
-    //     x: Math.round((100 - 1000) / 1080 * 10000),
-    //     y: Math.round(2250 / 2340 * 10000),
-    //   }]) // click pause
-    //   await sleep(50)
-    // }
+
     let i = 0;
     console.log("Loop click pause!");
     async function loopTouch () {
@@ -289,49 +283,60 @@ Musics = Musics.map(music => {
           x: Math.round((1080 - 680) / 1080 * 10000),
           y: Math.round(1550 / 2340 * 10000),
         }]); // click resume
-        await sleep(6025); // get from screen record
+        await sleep(6025); // wait for start game, obtain from screen record
+        // if (!isLooping) return;
         
         let shiftMs = 9000 - Math.round(songMeta.fillerSec * 1000)
         player.Play(playCallback, shiftMs).then(async () => {
+          console.log(`loop = ${isLooping}`);
           if (isLooping) {
             console.log("Loop! wait end screen");
             await sleep(10800)
+            if (!isLooping) return;
             
             // click end screen next
-            // 2000, 980
-            let touch = {
-              x: Math.round((1080 - 980) / 1080 * 10000),
-              y: Math.round(2000 / 2340 * 10000),
-              t: 50
-            }
-            // let i = 0
-            // function loopTouch () {
-            //   Toucher.SendTouch([touch])
-            //   i += 1
-            //   if (i < 26)
-            //     setTimeout(loopTouch, 100)
-            // }
-            // loopTouch()
-            for (let i = 0; i < 28; i++) {
-              Toucher.SendTouch([touch])
+            // 2000, 800
+            // for (let i = 0; i < 28; i++) { // during event
+            for (let i = 0; i < (eventMode ? 5 : 5); i++) { // no event
+              Toucher.SendTouch([{
+                x: Math.round((1080 - 800) / 1080 * 10000),
+                y: Math.round(2000 / 2340 * 10000),
+                t: 50
+              }])
               await sleep(100)
             }
+            await sleep(200)
+            // 2000, 980
+            // for (let i = 0; i < 28; i++) { // during event
+            // for (let i = 0; i < eventMode ? 28 : 16; i++) { // no event
+            for (let i = 0; i < (eventMode ? 22 : 10); i++) { // no event
+              Toucher.SendTouch([{
+                x: Math.round((1080 - 980) / 1080 * 10000),
+                y: Math.round(2000 / 2340 * 10000),
+                t: 50
+              }])
+              await sleep(100)
+            }
+            if (!isLooping) return;
             // await sleep(2600)
             // ------------- click song selection screen
-            await sleep(1000)
+            // await sleep(1000) // during event
+            await sleep(eventMode ? 1000 : 2000) // no event
             Toucher.SendTouch([{
               x: Math.round((1080 - 1000) / 1080 * 10000),
               y: Math.round(1650 / 2340 * 10000),
               t: 50
             }])
-            await sleep(500)
+            // await sleep(500) // during event
+            await sleep(eventMode ? 500 : 700) // no event
             // click select song
             Toucher.SendTouch([{
               x: Math.round((1080 - 980) / 1080 * 10000),
               y: Math.round(2000 / 2340 * 10000),
               t: 50
             }])
-            await sleep(500)
+            // await sleep(500) // during event
+            await sleep(eventMode ? 500 : 700) // no event
             // loop
             if (isLooping) {
               clickTillNextSong();
@@ -532,6 +537,7 @@ Musics = Musics.map(music => {
       }
     })
 
+    
     console.log(payload.t, payload.objects.map(x => {
       return `${x.type} ${x.lane}`
     }));
